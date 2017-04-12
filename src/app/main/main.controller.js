@@ -3,13 +3,12 @@
 
   angular
     .module('sRetro')
-    .controller('MainController', MainController)
-    .directive('calendar', calendar);
+    .controller('MainController', MainController);
+
 
   /** @ngInject */
-  function MainController($scope, moment){
-    var vm = this;
-    vm.day = moment();
+  function MainController($scope, $interval){
+    $scope.minDate = new Date();
   }// End `MainController`
 
 
