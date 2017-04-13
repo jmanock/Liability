@@ -1,16 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
   // do your setup here
   $(document).ready(function(){
-    var eventDates = {};
-    $('#calendar').datepicker({
-      beforeShowDay:function(date){
-        var highlight = eventDates[date];
-        if(highlight){
-          return [true, 'event, highligh'];
-        }else{
-          return [true, '', ''];
-        }
-      }
-    })
+    $('.datepicker').datepicker({
+      prevText:'<i class="fa fa-fw fa-angle-left"></i>',
+      nextText:'<i class="fa fa-fw fa-angle-right"></i>'
+    });// End `DatePicker`
+    $('a').on('click', function(e){
+      // Should open times
+      // Need to block off days that arnt open
+      e.preventDefault();
+      console.log('this');
+    });
   });
 });
