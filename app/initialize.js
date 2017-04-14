@@ -7,19 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
       nextText:'<i class="fa fa-fw fa-angle-right"></i>',
       beforeShowDay: function(date){
         var day = date.getDay();
-        return [day !=0 && day!=1, ''];
+        return [day !=0 && day!=1,''];
       }
     });// End `DatePicker`
 
     $('.datepicker').on('change', function(){
       var date = $(this).val();
       /*
-        ~ Need to change the color of the days not working
         ~ Rules for `Book` button
         ~ Instructions might be good
         ~ Send form to goog spread sheet
       */
-      console.log(this);
       $('form').show();
       $('.date').append(date);
     });// End `Change`
