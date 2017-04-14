@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/app.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
   <script src="/app.js"></script>
   <script>require('initialize');</script>
   <script
@@ -38,7 +39,7 @@
     <div class="datepicker">
       <div class="datepicker-header"></div>
     </div>
-    <form action="">
+    <form action="" id='bookNow'>
       <input type="text" placeholder='Name' class='name' required>
       <input type="email" placeholder='Email' class='email'>
       <input type="number" placeholder='Phone Number' class='phone' required>
@@ -56,7 +57,8 @@
         <option value="">6:00pm</option>
         <option value="">7:00pm</option>
       </select>
-      <button type='button' class='book'>Book</button>
+      <button type='submit' class='book'>Book</button>
     </form>
   </div>
+
 </body>
