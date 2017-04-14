@@ -22,4 +22,4 @@ document.addEventListener('DOMContentLoaded', function() {
       $('.date').append(date);
     });// End `Change`
   });// End `Datepicker`
-});
+});// End `Event listener`
