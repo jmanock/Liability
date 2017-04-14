@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',
       nextText:'<i class="fa fa-fw fa-angle-right"></i>',
       beforeShowDay: function(date){
-        return [date.getDay() !=0 && date.getDay()!=1, ''];
+        var day = date.getDay();
+        return [day !=0 && day!=1, ''];
       }
     });// End `DatePicker`
 
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ~ Instructions might be good
         ~ Send form to goog spread sheet
       */
+      console.log(this);
       $('form').show();
       $('.date').append(date);
     });// End `Change`
