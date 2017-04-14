@@ -3,6 +3,12 @@ body {
   background: #ffe7e9
   color: #ddd;
 }
+.navbar{
+  background-color:#191919 !important;
+}
+.navbar-brand{
+  color:red !important;
+}
 .datepicker {
   font-family:cursive;
   width: 475px;

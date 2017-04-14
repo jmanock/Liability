@@ -5,11 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',
       nextText:'<i class="fa fa-fw fa-angle-right"></i>'
     });// End `DatePicker`
-    $('a').on('click', function(e){
+    $('a').on('change', function(e){
       // Should open times
       // Need to block off days that arnt open
       e.preventDefault();
-      console.log('this');
+      var selected = $(this).val();
+      console.log(selected);
     });
   });
 });
