@@ -4,16 +4,22 @@ document.addEventListener('DOMContentLoaded', function() {
     $('form').hide();
     $('.datepicker').datepicker({
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',
-      nextText:'<i class="fa fa-fw fa-angle-right"></i>'
+      nextText:'<i class="fa fa-fw fa-angle-right"></i>',
+      beforeShowDay: function(date){
+        return [date.getDay() !=0 && date.getDay()!=1, ''];
+      }
     });// End `DatePicker`
 
     $('.datepicker').on('change', function(){
-      var change = $(this).val();
+      var date = $(this).val();
       /*
+        ~ Need to change the color of the days not working
+        ~ Rules for `Book` button
+        ~ Instructions might be good
         ~ Send form to goog spread sheet
-        ~ Should also block out the days not working
       */
       $('form').show();
+      $('.date').append(date);
     });// End `Change`
   });// End `Datepicker`
 });
