@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="/app.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src='google-sheets.js'></script>
   <script src="/app.js"></script>
   <script>require('initialize');</script>
   <script
@@ -40,9 +39,9 @@
       <div class="datepicker-header"></div>
     </div>
     <form action="" id='bookNow'>
-      <input type="text" placeholder='Name' class='name' required>
-      <input type="email" placeholder='Email' class='email'>
-      <input type="number" placeholder='Phone Number' class='phone' required>
+      <input type="text" placeholder='Name' id='name' required>
+      <input type="email" placeholder='Email' id='email'>
+      <input type="number" placeholder='Phone Number' id='phone' required>
       <span class='date'></span>
       <select name="time" id="" required>
         <option value="" disabled selected>Select time:</option>

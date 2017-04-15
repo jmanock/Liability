@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });// End `DatePicker`
 
-    $('.datepicker').on('change', function(){
+    $('.datepicker').on('change', function(e){
+      e.preventDefault();
       var date = $(this).val();
       /*
         ~ Rules for `Book` button
