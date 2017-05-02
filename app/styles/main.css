@@ -1,87 +1,84 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+body{
+  font-family:'Quicksand', sans-serif;
+  /*background-color:#ffe7e9;*/
+  color:#ddd;
 }
-
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.navbar{
+  background-color:#191919;
 }
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+.navbar-brand{
+  color:purple;
 }
-
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+.datepicker{
+  width:475px;
+  background:#333;
+  border-radius:10px;
+  box-shadow:0 19px 38px rgba(0,0,0,0.2), 0 15px 12px rgba(0,0,0,0.2);
+  margin:15px auto;
+  color:#111;
+  overflow:hidden;
 }
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+.datepicker .ui-datepicker-inline{
+  padding:30px;
 }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.datepicker .ui-datepicker-header{
+  text-align:center;
+  font-size:1.5em;
+  padding-bottom:.5em;
+  letter-spacing:.1em;
+  color:#111;
 }
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+.datepicker .ui-datepicker-header .ui-datepicker-prev,
+.datepicker .ui-datepicker-header .ui-datepicker-next{
+  float:left;
+  cursor:pointer;
+  font-size:1.4em;
+  padding:0 5px;
+  margin-top:-7px;
+  color:#aaa;
+  transition:.6s;
 }
-.container-narrow > hr {
-  margin: 30px 0;
+.datepicker .ui-datepicker-header .ui-datepicker-next{
+  float:right;
 }
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+.datepicker .ui-datepicker-calendar{
+  width:100%;
+  font-size:1.5em;
+  align:center;
 }
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+.datepicker .ui-datepicker-calendar thead{
+  color:purple;
 }
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+.datepicker .ui-datepicker-calendar tr th,
+.datepicker .ui-datepicker-calendar tr td{
+  padding-bottom:.5em;
 }
-.marketing p + h4 {
-  margin-top: 28px;
+.datepicker .ui-datepicker-calendar a{
+  color:#fff;
+  text-decoration:none;
+  display:block;
+  margin:0 auto;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  border-radius:50%;
+  border:1px solid transparent;
+  cursor:pointer;
 }
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.datepicker .ui-datepicker-calendar a:hover{
+  background:purple;
+  color:#fff;
+  transition:.7s;
+  transform:scale(1);
+}
+.datepicker .ui-datepicker-calendar .ui-state-highlight{
+  background:purple;
+  color:#fff;
+}
+.datepicker .ui-datepicker-calendar .ui-date-highlight:hover{
+  color:#fff;
+}
+h3{
+  text-align:center;
 }
