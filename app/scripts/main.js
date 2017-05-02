@@ -9,11 +9,14 @@ document.addEventListener('DOMContentLoaded', function(){
         return [day !=0 && day!=1, ''];
       }
     });// End `DatePicker`
+
     $('.datepicker').on('change',function(e){
       e.preventDefault();
       var date = $(this).val();
       $('form').show();
       $('.date').append(date);
+      // Need to fix this bug on changing dates
+
     });// End `Change`
   });// End `Ready`
 });// End `Event Listener`
