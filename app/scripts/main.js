@@ -14,9 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
       e.preventDefault();
       var date = $(this).val();
       $('form').show();
-      $('.date').append(date);
-      // Need to fix this bug on changing dates
-
+      $('.date').text(date);
     });// End `Change`
   });// End `Ready`
 });// End `Event Listener`
