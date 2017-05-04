@@ -51,13 +51,14 @@
       <div class="datepicker">
         <div class="datepicker-header"></div>
       </div>
-      <a href="sheets.html">Sheeets time</a>
-      <form action="" id='bookNow'>
-        <input type="text" placeholder='Name' class='name' required>
-        <input type="email" placeholder='Email' class='email'>
-        <input type="number" placeholder='Phone number' class='phone' required>
-        <span class='date'></span>
-        <select name="time" id="" required>
+<a href="sheets.html">Sheets</a>
+      <form action="https://script.google.com/macros/s/AKfycbzoOi3KQENhFs9dsnMfWtLqS0Ytt-9iehe_PH79Lu5xyhZ3Ew/exec" method='POST' id='BookNow'>
+        <input type="text" placeholder='Name:' class='name' name='Name'>
+        <input type="email" placeholder='Email:' class='email' name='Email'>
+        <span id='email-invalid' style='visibility:hidden'>Must be a valid email address</span>
+        <input type="number" placeholder='Phone Number:' class='phone' required name='PhoneNumber'>
+        <span name='Date' class='date' id='Date'></span>
+        <select name="Time" required>
           <option value="" disabled selected>Select Time:</option>
           <option value="10">10:00am</option>
           <option value="11">11:00am</option>
@@ -70,9 +71,15 @@
           <option value="6">6:00pm</option>
           <option value="7">7:00pm</option>
         </select>
-        <button type='submit' class='book'>Book</button>
+        <button type='submit' class='button-success'>
+          <i class='fa fa-paper-plane'></i>&nbsp; Send
+        </button>
       </form>
+      <div id="thankyou_message" style='display:none;'>
+        <h2><em>Thanks</em> for booking with us! We will be in touch soon!</h2>
+      </div>
     </div>
+    <script src='scripts/validation-functions.js'></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
