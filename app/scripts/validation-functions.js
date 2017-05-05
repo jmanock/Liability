@@ -5,6 +5,8 @@ function validEmail(email){
 
 function getFormData(){
   var elements = document.getElementById('BookNow').elements;
+  var date = documnet.getElementById('Date');
+  console.log(date);
   var fields = Object.keys(elements).map(function(k){
     if(elements[k].name !== undefined){
       return elements[k].name;
