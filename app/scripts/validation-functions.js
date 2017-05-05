@@ -4,7 +4,7 @@ function validEmail(email){
 }
 
 function getFormData(){
-  var elements = document.getElementById('gform').elements;
+  var elements = document.getElementById('BookNow').elements;
   var fields = Object.keys(elements).map(function(k){
     if(elements[k].name !== undefined){
       return elements[k].name;
@@ -48,7 +48,7 @@ function handleFormSubmit(event){
     xhr.onreadystatechange = function(){
       console.log(xhr.status, xhr.statusText);
       console.log(xhr.responseText);
-      document.getElementById('gform').style.display = 'none';
+      document.getElementById('BookNow').style.display = 'none';
       document.getElementById('thankyou_message').style.display = 'block';
       return;
     };
@@ -60,7 +60,7 @@ function handleFormSubmit(event){
 }
 function loaded(){
   console.log('contact form submission handler loaded successfully');
-  var form = document.getElementById('gform');
+  var form = document.getElementById('BookNow');
   form.addEventListener('submit', handleFormSubmit, false);
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
