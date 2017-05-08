@@ -85,3 +85,6 @@ body{
 h3{
   text-align:center;
 }
+#Date{
+  display:none;
+}
