@@ -14,22 +14,26 @@ document.addEventListener('DOMContentLoaded', function(){
       e.preventDefault();
       var date = $(this).val();
       $('form').show();
-      $('.date').text(date);
+      // $('.date').text(date);
+      // $('.phone').append('<input name="date" class="date" value='+date+'>');
+      $('.phone').append('<h1>HelloFriend</h1>');
       getData(date);
     });// End `Change`
   });// End `Ready`
 });// End `Event Listener`
 function getData(date){
   var elements = document.getElementById('BookNow').elements;
-
+  console.log(elements);
 
   var fields = Object.keys(elements).map(function(k){
+
     if(elements[k].name !== undefined){
       return elements[k].name;
     }else if(elements[k].length > 0){
       return elements[k].item(0).name;
     }
   }).filter(function(item, pos, self){
+
     return self.indexOf(item) == pos && item;
   });
   var data = {};
