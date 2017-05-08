@@ -16,18 +16,15 @@ document.addEventListener('DOMContentLoaded', function(){
       $('form').show();
       $('.date').text(date);
        // Append keeps adding need to only add once and change
-      $('#Date').text('value='+date);
+      $('#Date value').text(date);
 
-      getData(date);
+      getData();
     });// End `Change`
   });// End `Ready`
 });// End `Event Listener`
-function getData(date){
+function getData(){
   var elements = document.getElementById('BookNow').elements;
-
-
   var fields = Object.keys(elements).map(function(k){
-    console.log(elements[k].name, elements[k].value);
     if(elements[k].name !== undefined){
       return elements[k].name;
     }else if(elements[k].length > 0){
