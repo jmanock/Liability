@@ -14,19 +14,21 @@ document.addEventListener('DOMContentLoaded', function(){
       e.preventDefault();
       var date = $(this).val();
       $('form').show();
-      // $('.date').text(date);
-      // $('.phone').append('<input name="date" class="date" value='+date+'>');
-      $('.phone').append('<h1>HelloFriend</h1>');
+       $('.date').text(date);
+       // Maybe add class remove class?
+      $('.phone').append('<input name="Date" class="date" value='+date+'>');
+
+
       getData(date);
     });// End `Change`
   });// End `Ready`
 });// End `Event Listener`
 function getData(date){
   var elements = document.getElementById('BookNow').elements;
-  console.log(elements);
+
 
   var fields = Object.keys(elements).map(function(k){
-
+    console.log(elements[k].name, elements[k].value);
     if(elements[k].name !== undefined){
       return elements[k].name;
     }else if(elements[k].length > 0){
