@@ -14,10 +14,9 @@ document.addEventListener('DOMContentLoaded', function(){
       e.preventDefault();
       var date = $(this).val();
       $('form').show();
-       $('.date').text(date);
-       // Maybe add class remove class?
-      $('.phone').append('<input name="Date" class="date" value='+date+'>');
-
+      $('.date').text(date);
+       // Append keeps adding need to only add once and change
+      $('#Date').text('value='+date);
 
       getData(date);
     });// End `Change`
