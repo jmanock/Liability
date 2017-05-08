@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function(){
 });// End `Event Listener`
 function getData(date){
   var elements = document.getElementById('BookNow').elements;
-  
-  console.log(date);
+
+
   var fields = Object.keys(elements).map(function(k){
     if(elements[k].name !== undefined){
       return elements[k].name;
@@ -35,6 +35,7 @@ function getData(date){
   var data = {};
   fields.forEach(function(k){
     data[k] = elements[k].value;
+    // Need to add date into the values
     var str = "";
     if(elements[k].type === 'checkbox'){
       str = str + elements[k].checked + ', ';
@@ -48,6 +49,6 @@ function getData(date){
       }
     }
   });
-  console.log(data);
+  //console.log(data);
   return data;
 }
