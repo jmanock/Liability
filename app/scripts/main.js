@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
       $('form').show();
       $('.date').text(date);
        // Append keeps adding need to only add once and change
-      $('#Date value').text(date);
+      $('#Date').val(date);
 
       getData();
     });// End `Change`
