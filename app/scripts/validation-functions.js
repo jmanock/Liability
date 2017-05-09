@@ -5,7 +5,6 @@ function validEmail(email){
 
 function getFormData(){
   var elements = document.getElementById('BookNow').elements;
-  
   var fields = Object.keys(elements).map(function(k){
     if(elements[k].name !== undefined){
       return elements[k].name;
@@ -39,7 +38,7 @@ function handleFormSubmit(event){
   event.preventDefault();
   var data = getFormData();
   if(!validEmail(data.email)){
-    document.getElementById('email-invalid').style.display = 'block';
+    // document.getElementById('email-invalid').style.display = 'block';
     return false;
   }else{
     var url = event.target.action;
@@ -50,7 +49,7 @@ function handleFormSubmit(event){
       console.log(xhr.status, xhr.statusText);
       console.log(xhr.responseText);
       document.getElementById('BookNow').style.display = 'none';
-      document.getElementById('thankyou_message').style.display = 'block';
+      // document.getElementById('thankyou_message').style.display = 'block';
       return;
     };
     var encoded = Object.keys(data).map(function(k){
