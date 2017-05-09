@@ -42,44 +42,62 @@
           <ul class='nav navbar-nav navbar-left'>
             <li><a href="#">About</a></li>
             <li><a href="#">Book</a></li>
+            <li><a href="#">Location</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <section>
+      <section class='about'>
         <h3>About</h3>
-        
+        <p>
+          Welcome to Salon Retro! We are pleased to anounce the new ownership!
+        </p>
       </section>
-      <h3>Book Now</h3>
 
-      <div class="datepicker">
-        <div class="datepicker-header"></div>
-      </div>
+      <section class='book'>
+        <h3>Book Online</h3>
 
-      <form action="https://script.google.com/macros/s/AKfycbzoOi3KQENhFs9dsnMfWtLqS0Ytt-9iehe_PH79Lu5xyhZ3Ew/exec" method='POST' id='BookNow'>
-        <input type="text" placeholder='Name:' class='name' name='Name'>
-        <input type="email" placeholder='Email:' class='email' name='email'>
-        <span id='email-invalid' style='visibility:hidden'>Must be a valid email address</span>
-        <input type="number" placeholder='Phone Number:' class='phone' required name='PhoneNumber'>
-        <span class='date'></span>
-        <input type="text" name='Date' class='date' id='Date'>
-        <select name="Time" required>
-          <option value="" disabled selected>Select Time:</option>
-          <option value="10:00am">10:00am</option>
-          <option value="11:00am">11:00am</option>
-          <option value="12:00pm">12:00pm</option>
-          <option value="1:00pm">1:00pm</option>
-          <option value="2:00pm">2:00pm</option>
-          <option value="3:00pm">3:00pm</option>
-          <option value="4:00pm">4:00pm</option>
-          <option value="5:00pm">5:00pm</option>
-          <option value="6:00pm">6:00pm</option>
-          <option value="7:00pm">7:00pm</option>
-        </select>
-        <button type='submit' class='button-success'>
-          <i class='fa fa-paper-plane'></i>&nbsp; Send
-        </button>
-      </form>
+        <div class="datepicker">
+          <div class="datepicker-header"></div>
+        </div>
+
+        <form action="https://script.google.com/macros/s/AKfycbzoOi3KQENhFs9dsnMfWtLqS0Ytt-9iehe_PH79Lu5xyhZ3Ew/exec" method='POST' id='BookNow'>
+
+          <input type="text" placeholder='Name:' class='name' name='Name'>
+
+          <input type="email" placeholder='Email:' class='email' name='email'>
+
+          <span id='email-invalid' style='visibility:hidden'>Must be a valid email address</span>
+
+          <input type="number" placeholder='Phone Number:' class='phone' required name='PhoneNumber'>
+
+          <span class='date'></span>
+
+          <input type="text" name='Date' class='date' id='Date'>
+
+          <select name="Time" required>
+            <option value="" disabled selected>Select Time:</option>
+            <option value="10:00am">10:00am</option>
+            <option value="11:00am">11:00am</option>
+            <option value="12:00pm">12:00pm</option>
+            <option value="1:00pm">1:00pm</option>
+            <option value="2:00pm">2:00pm</option>
+            <option value="3:00pm">3:00pm</option>
+            <option value="4:00pm">4:00pm</option>
+            <option value="5:00pm">5:00pm</option>
+            <option value="6:00pm">6:00pm</option>
+            <option value="7:00pm">7:00pm</option>
+          </select>
+
+          <button type='submit' class='button-success'>
+            <i class='fa fa-paper-plane'></i>&nbsp; Send
+          </button>
+
+        </form>
+      </section>
+
+
+
       <!-- <div id="thankyou_message" style='display:none;'>
         <h2><em>Thanks</em> for booking with us! We will be in touch soon!</h2>
       </div> -->
@@ -98,8 +116,8 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src='/bower_components/jquery/dist/jquery.js'></script>
+    <script src='/bower_components/modernizr/modernizr.js'></script>
     <!-- endbower -->
     <!-- endbuild -->
 
