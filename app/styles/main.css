@@ -3,6 +3,7 @@
 body{
   font-family:'Quicksand', sans-serif;
   /*background-color:#ffe7e9;*/
+  background-color:yellow;
   /*color:#ddd;*/
 }
 .navbar{
@@ -88,4 +89,13 @@ h3{
 }
 #Date{
   display:none;
+}
+.header{
+  background:#000000 url('../images/9k=.jpg');
+  z-index:2;
+  -webkit-transform:skew(0deg, -10deg);
+  -moz-transform:skew(0deg, -10deg);
+  -ms-transform:skew(0deg, -10deg);
+  -o-transform:skew(0deg, -10deg);
+  transform:skew(0deg, -10deg);  
 }
