@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
   $(document).ready(function(){
-    $('form').hide();
+    $('#BookNow').hide();
     $('.datepicker').datepicker({
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',
       nextText:'<i class="fa fa-fw fa-angle-right"></i>',
@@ -17,5 +17,17 @@ document.addEventListener('DOMContentLoaded', function(){
       $('.date').text(date);
       $('#Date').val(date);
     });// End `Change`
+
   });// End `Ready`
 });// End `Event Listener`
+function initMap(){
+  var uluru = {lat:28.6486639786372, lng:-81.3540162583253};
+  var map = new google.maps.Map(document.getElementById('map'),{
+    zoom:16,
+    center:uluru
+  });
+  var marker = new google.maps.Marker({
+    position:uluru,
+    map:map
+  });
+}
