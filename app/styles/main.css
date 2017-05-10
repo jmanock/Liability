@@ -167,14 +167,13 @@ input:hover::placeholder, textarea:hover::placeholder{
 input:hover:focus::-ms-paceholder, textarea:hover::focus:-ms-placeholder{
   color:#cbc6c1;
 }*/
-input{
+#comments input{
   font-size:.875em;
   width:470px;
   height:50px;
   padding:0px 15px 0px 15px;
   background:transparent;
   outline:none;
-
   border:solid 1px #b3aca7;
   border-bottom:none;
   transition:all .3s ease-in-out;
@@ -182,9 +181,8 @@ input{
   -moz-transition:all .3s ease-in-out;
   -ms-transition:all .3s ease-in-out;
 }
-input:hover{
-  background:teal;
-
+#comments input:hover{
+  
 }
 textarea{
   width:470px;
@@ -194,7 +192,6 @@ textarea{
   padding:15px;
   background:transparent;
   outline:none;
-
   font-size:.875em;
   border:solid 1px #b3aca7;
   transition:all .3s ease-in-out;
@@ -203,5 +200,5 @@ textarea{
   -ms-transtion:all .3s ease-in-out;
 }
 textarea:hover{
-  background:teal;
+
 }
