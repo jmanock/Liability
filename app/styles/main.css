@@ -110,5 +110,98 @@ h3{
 }
 #comments{
   float:right;
-  margin-right:80px;
+}
+/*input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+  font-size:0.87em;
+  color:#aca49c;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
+  color:#bbb5af;
+}
+input::-moz-placeholder, textarea::-moz-placeholder{
+  color:#aca49c;
+  font-size:0.87em;
+}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder{
+  color:#bbb5af;
+}
+input::placeholder, textarea::placeholder{
+  color:#aca49c;
+  font-size:0.87em;
+}
+input:focus::placeholder, textarea::focus:placeholder{
+  color:#bbb5af;
+}
+input::-ms-placeholder, textarea::ms-placeholder{
+  color:#aca49c;
+  font-size:0.875em;
+}
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder{
+  color:#bbb5af;
+}
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder{
+  color:#e2dedb;
+  font-size:.875em;
+}
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder{
+  color:#cbc6c1;
+}
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder{
+  color:#e2dedb;
+  font-size:.875em;
+}
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder{
+  color:#cbc6c1;
+}
+input:hover::placeholder, textarea:hover::placeholder{
+  color:#e2dedb;
+  font-size:.875em;
+}
+input:hover:focus::placeholder, textarea:hover:focus::placeholder{
+  color:#cbc6c1;
+}
+input:hover::placeholder, textarea:hover::placeholder{
+  color:#e2dedb;
+  font-size:.875em;
+}
+input:hover:focus::-ms-paceholder, textarea:hover::focus:-ms-placeholder{
+  color:#cbc6c1;
+}*/
+input{
+  font-size:.875em;
+  width:470px;
+  height:50px;
+  padding:0px 15px 0px 15px;
+  background:transparent;
+  outline:none;
+
+  border:solid 1px #b3aca7;
+  border-bottom:none;
+  transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+}
+input:hover{
+  background:teal;
+
+}
+textarea{
+  width:470px;
+  max-width:470px;
+  height:110px;
+  max-height:110px;
+  padding:15px;
+  background:transparent;
+  outline:none;
+
+  font-size:.875em;
+  border:solid 1px #b3aca7;
+  transition:all .3s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -ms-transtion:all .3s ease-in-out;
+}
+textarea:hover{
+  background:teal;
 }
