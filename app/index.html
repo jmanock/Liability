@@ -71,7 +71,6 @@
           <input type="email" placeholder='Email' class='email' name='email'><br>
           <!-- <span id='email-invalid' style='visibility:hidden'>Must be a valid email address</span> -->
           <input type="number" placeholder='Phone Number' class='phone' required name='PhoneNumber'><br>
-          <span class='date' id='showDate'></span><br>
           <input type="text" name='Date' class='date' id='Date'>
           <select name="Time" required>
             <option value="" disabled selected>Select Time</option>
@@ -86,6 +85,7 @@
             <option value="6:00pm">6:00pm</option>
             <option value="7:00pm">7:00pm</option>
           </select><br>
+          <span class='date' id='showDate'></span><br>
           <button type='submit' class='button-success'>
             <i class='fa fa-paper-plane'></i>&nbsp; Send
           </button>
@@ -107,7 +107,9 @@
           <input type="text" placeholder='Name'><br>
           <input type="email" placeholder='Email'><br>
           <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea><br>
-          <button type='submit'>Submit</button>
+          <button type='submit'>
+            <i class='fa fa-paper-plane'></i>&nbsp; Send
+          </button>
         </form>
       </section>
     </div>

@@ -144,12 +144,13 @@ textarea{
   -moz-transition:all .3s ease-in-out;
   -ms-transition:all .3s ease-in-out;
 }
-.phone{
-  border-bottom:solid 1px #b3aca7
-}
-#showDate{
-  
-}
 select{
   width:400px;
+  height:50px;
+  background:transparent;
+  font-size:.875em;
+}
+#showDate{
+  font-size:1.3em;
+  margin-left:15px;
 }
