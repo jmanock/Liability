@@ -49,11 +49,11 @@
 
       <section class='about'>
         <h3>About</h3>
-        <h4>Our Salon offers</h4>
+        <h4>Our Salon Offers</h4>
         <ul>
           <li>Free Wi-Fi</li>
           <li>Online Booking</li>
-          <li>Text and/or Phone call Conformations</li>
+          <li>Text and/or Phone Call Conformations</li>
           <li>Complimentary Wine, Beer, Soft Drinks, Tea, Coffee &amp; Water</li>
           <li>Free Parking</li>
         </ul>
@@ -67,21 +67,14 @@
         </div>
 
         <form action="https://script.google.com/macros/s/AKfycbzoOi3KQENhFs9dsnMfWtLqS0Ytt-9iehe_PH79Lu5xyhZ3Ew/exec" method='POST' id='BookNow'>
-
-          <input type="text" placeholder='Name:' class='name' name='Name'>
-
-          <input type="email" placeholder='Email:' class='email' name='email'>
-
-          <span id='email-invalid' style='visibility:hidden'>Must be a valid email address</span>
-
-          <input type="number" placeholder='Phone Number:' class='phone' required name='PhoneNumber'>
-
-          <span class='date'></span>
-
+          <input type="text" placeholder='Name' class='name' name='Name'><br>
+          <input type="email" placeholder='Email' class='email' name='email'><br>
+          <!-- <span id='email-invalid' style='visibility:hidden'>Must be a valid email address</span> -->
+          <input type="number" placeholder='Phone Number' class='phone' required name='PhoneNumber'><br>
+          <span class='date' id='showDate'></span><br>
           <input type="text" name='Date' class='date' id='Date'>
-
           <select name="Time" required>
-            <option value="" disabled selected>Select Time:</option>
+            <option value="" disabled selected>Select Time</option>
             <option value="10:00am">10:00am</option>
             <option value="11:00am">11:00am</option>
             <option value="12:00pm">12:00pm</option>
@@ -92,8 +85,7 @@
             <option value="5:00pm">5:00pm</option>
             <option value="6:00pm">6:00pm</option>
             <option value="7:00pm">7:00pm</option>
-          </select>
-
+          </select><br>
           <button type='submit' class='button-success'>
             <i class='fa fa-paper-plane'></i>&nbsp; Send
           </button>
@@ -107,9 +99,8 @@
           <address>
             181 Obrien RD <br>
             Fern Park, FL 32730 <br>
-            <a href="tel:3214446563">(321) 444-6563</a>
+            <i class='fa fa-phone-square'> <a href="tel:3214446563">(321) 444-6563</a></i>
           </address>
-
         </div>
 
         <form action="" id='comments'>
@@ -119,15 +110,9 @@
           <button type='submit'>Submit</button>
         </form>
       </section>
-
-
-
-      <!-- <div id="thankyou_message" style='display:none;'>
-        <h2><em>Thanks</em> for booking with us! We will be in touch soon!</h2>
-      </div> -->
     </div>
+
     <script src='scripts/validation-functions.js'></script>
-    <!-- <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3OCo6FqKVe-qeSXdiL6Sb9Y3Xv7GPJns&callback=myMap'></script> -->
     <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3OCo6FqKVe-qeSXdiL6Sb9Y3Xv7GPJns&callback=initMap'></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

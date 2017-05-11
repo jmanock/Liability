@@ -19,7 +19,7 @@ body{
   /*background:#7498AF;*/
   border-radius:10px;
   box-shadow:0 19px 38px rgba(0,0,0,0.2), 0 15px 12px rgba(0,0,0,0.2);
-  margin:15px auto;
+  /*margin:15px auto;*/
   /*color:#222;*/
   overflow:hidden;
 }
@@ -86,8 +86,13 @@ body{
 .datepicker .ui-datepicker-calendar .ui-date-highlight:hover{
   color:#fff;
 }
-h3{
-  text-align:center;
+#BookNow{
+  position:relative;
+  width:400px;
+  /*margin:50px auto 1000px auto;*/
+  margin-left:55%;
+  margin-top:-25%;
+  margin-bottom:20%;
 }
 #Date{
   display:none;
@@ -101,6 +106,7 @@ h3{
   -o-transform:skew(0deg, -10deg);
   transform:skew(0deg, -10deg);
 }*/
+
 #map{
   height:200px;
   width:50%;
@@ -110,12 +116,9 @@ h3{
   float:left;
   margin-left:30px
 }
-#comments{
-  float:right;
-}
-#comments input{
+input{
   font-size:.875em;
-  width:470px;
+  width:400px;
   height:50px;
   padding:0px 15px 0px 15px;
   background:transparent;
@@ -127,24 +130,26 @@ h3{
   -moz-transition:all .3s ease-in-out;
   -ms-transition:all .3s ease-in-out;
 }
-#comments input:hover{
-
-}
 textarea{
-  width:470px;
-  max-width:470px;
+  width:400px;
   height:110px;
   max-height:110px;
   padding:15px;
   background:transparent;
   outline:none;
   font-size:.875em;
-  /*border:solid 1px #b3aca7;*/
+  border:solid 1px #b3aca7;
   transition:all .3s ease-in-out;
   -webkit-transition:all .3s ease-in-out;
   -moz-transition:all .3s ease-in-out;
-  -ms-transtion:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
 }
-textarea:hover{
-
+.phone{
+  border-bottom:solid 1px #b3aca7
+}
+#showDate{
+  
+}
+select{
+  width:400px;
 }
