@@ -7,20 +7,20 @@ body{
   /*color:#ddd;*/
 }
 .navbar{
-  background-color:#444;
+  /*background-color:#444;*/
   font-size:1.5em;
 }
 .navbar-brand{
-  color:#7498af !important;
+  /*color:#7498af !important;*/
   font-size:2em;
 }
 .datepicker{
   width:475px;
-  background:#7498AF;
+  /*background:#7498AF;*/
   border-radius:10px;
   box-shadow:0 19px 38px rgba(0,0,0,0.2), 0 15px 12px rgba(0,0,0,0.2);
   margin:15px auto;
-  color:#222;
+  /*color:#222;*/
   overflow:hidden;
 }
 .datepicker .ui-datepicker-inline{
@@ -31,8 +31,8 @@ body{
   font-size:1.5em;
   padding-bottom:.5em;
   letter-spacing:.1em;
-  /*color:#111;*/
-  color:#fff;
+  color:#111;
+  /*color:#fff;*/
 }
 .datepicker .ui-datepicker-header .ui-datepicker-prev,
 .datepicker .ui-datepicker-header .ui-datepicker-next{
@@ -41,7 +41,8 @@ body{
   font-size:1.4em;
   padding:0 5px;
   margin-top:-7px;
-  color:#fff;
+  /*color:#fff;*/
+  color:black;
   transition:.6s;
 }
 .datepicker .ui-datepicker-header .ui-datepicker-next{
@@ -53,14 +54,15 @@ body{
   align:center;
 }
 .datepicker .ui-datepicker-calendar thead{
-  color:yellow;
+  /*color:yellow;*/
 }
 .datepicker .ui-datepicker-calendar tr th,
 .datepicker .ui-datepicker-calendar tr td{
   padding-bottom:.5em;
 }
 .datepicker .ui-datepicker-calendar a{
-  color:#fff;
+  /*color:#fff;*/
+  color:black;
   text-decoration:none;
   display:block;
   margin:0 auto;
@@ -79,7 +81,7 @@ body{
 }
 .datepicker .ui-datepicker-calendar .ui-state-highlight{
   text-decoration:underline;
-  text-decoration-color:yellow;
+  /*text-decoration-color:yellow;*/
 }
 .datepicker .ui-datepicker-calendar .ui-date-highlight:hover{
   color:#fff;
@@ -111,62 +113,6 @@ h3{
 #comments{
   float:right;
 }
-/*input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
-  font-size:0.87em;
-  color:#aca49c;
-}
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
-  color:#bbb5af;
-}
-input::-moz-placeholder, textarea::-moz-placeholder{
-  color:#aca49c;
-  font-size:0.87em;
-}
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder{
-  color:#bbb5af;
-}
-input::placeholder, textarea::placeholder{
-  color:#aca49c;
-  font-size:0.87em;
-}
-input:focus::placeholder, textarea::focus:placeholder{
-  color:#bbb5af;
-}
-input::-ms-placeholder, textarea::ms-placeholder{
-  color:#aca49c;
-  font-size:0.875em;
-}
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder{
-  color:#bbb5af;
-}
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder{
-  color:#e2dedb;
-  font-size:.875em;
-}
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder{
-  color:#cbc6c1;
-}
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder{
-  color:#e2dedb;
-  font-size:.875em;
-}
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder{
-  color:#cbc6c1;
-}
-input:hover::placeholder, textarea:hover::placeholder{
-  color:#e2dedb;
-  font-size:.875em;
-}
-input:hover:focus::placeholder, textarea:hover:focus::placeholder{
-  color:#cbc6c1;
-}
-input:hover::placeholder, textarea:hover::placeholder{
-  color:#e2dedb;
-  font-size:.875em;
-}
-input:hover:focus::-ms-paceholder, textarea:hover::focus:-ms-placeholder{
-  color:#cbc6c1;
-}*/
 #comments input{
   font-size:.875em;
   width:470px;
@@ -182,7 +128,7 @@ input:hover:focus::-ms-paceholder, textarea:hover::focus:-ms-placeholder{
   -ms-transition:all .3s ease-in-out;
 }
 #comments input:hover{
-  
+
 }
 textarea{
   width:470px;
@@ -193,7 +139,7 @@ textarea{
   background:transparent;
   outline:none;
   font-size:.875em;
-  border:solid 1px #b3aca7;
+  /*border:solid 1px #b3aca7;*/
   transition:all .3s ease-in-out;
   -webkit-transition:all .3s ease-in-out;
   -moz-transition:all .3s ease-in-out;
