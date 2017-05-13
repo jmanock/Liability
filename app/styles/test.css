@@ -1,0 +1,40 @@
+* *:after *::before{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  /*background:#800000;*/
+  /*background:#b22222;*/
+}
+#Header{
+  height:100%;
+  text-align:center;
+  /*background:#800000;*/
+  color:white;
+}
+img{
+  height:50%;
+  opacity:.65;
+  border-radius:15px;
+}
+#About{
+  height:100%;
+  text-align:center;
+  background:#b22222;
+}
+#BOOK{
+  height:100%;
+  text-align:center;
+  background:#800000;
+}
+#Contact{
+  height:100%;
+  text-align:center;
+  background:#b22222;
+}
