@@ -6,7 +6,8 @@
 body{
   font-family:'Quicksand', sans-serif;
   /*background-color:#ffe7e9;*/
-
+  background-image:url('../images/bkholly.jpg');
+  background-repeat:no-repeat;
   /*color:#ddd;*/
 }
 .navbar{
