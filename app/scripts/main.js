@@ -34,6 +34,5 @@ function initMap(){
 /*
   ~ Need brit pic
   ~ Submit button on contact form
-  
-
+  ~ Finish style
 */
