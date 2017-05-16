@@ -8,6 +8,7 @@ body{
   /*background-color:#ffe7e9;*/
   background-image:url('../images/bkholly.jpg');
   background-repeat:no-repeat;
+  background-attachment:fixed;
   /*color:#ddd;*/
 }
 .navbar{
@@ -155,4 +156,7 @@ select{
   float:right;
   margin-top:-25%;
   margin-right:10%;
+}
+.container{
+  background-color:orange;
 }
