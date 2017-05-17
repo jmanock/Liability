@@ -9,7 +9,8 @@ body{
   background-image:url('../images/bkholly.jpg');
   background-repeat:no-repeat;
   background-attachment:fixed;
-  /*color:#ddd;*/
+  color:#ddd;
+  height:100%;
 }
 .navbar{
   /*background-color:#444;*/
@@ -17,6 +18,7 @@ body{
 }
 .navbar-brand{
   /*color:#7498af !important;*/
+  color:black !important;
   font-size:2em;
   font-family:limelight;
 }
@@ -159,4 +161,11 @@ select{
 }
 .container{
   background-color:#333;
+}
+h3{
+  color:red;
+  font-family:limelight;
+}
+.about, .book, #Contact{
+  height:100vh;
 }
