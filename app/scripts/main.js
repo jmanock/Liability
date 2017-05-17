@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function(){
       $('#Date').val(date);
     });// End `Change`
 
+    $('.grid').masonry({
+      itemSelector:'.grid-item',
+      columnWidth:160
+    });
   });// End `Ready`
 });// End `Event Listener`
 function initMap(){

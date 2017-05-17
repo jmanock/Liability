@@ -33,6 +33,30 @@ body{
   border-radius:20px;
   margin-right:10px;
 }
+.grid-item img{
+  width:160px;
+  height:120px;
+  float:left;
+  border:5px solid white;
+}
+.grid-item--width2 img{
+  width:320px;
+}
+.grid-item--width3 img{
+  width:480px;
+}
+.grid-item--height2 img{
+  height:200px;
+}
+.grid-item--height3 img{
+  height:260px;
+}
+img{
+  cursor:pointer;
+}
+img:hover{
+  opacity:.4;
+}
 #book{
 
 }
