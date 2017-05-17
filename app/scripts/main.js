@@ -35,8 +35,3 @@ function initMap(){
     map:map
   });
 }
-/*
-  ~ Need brit pic
-  ~ Submit button on contact form
-  ~ Finish style
-*/

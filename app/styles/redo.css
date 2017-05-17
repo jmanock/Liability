@@ -38,6 +38,7 @@ body{
   height:120px;
   float:left;
   border:5px solid white;
+  cursor:pointer;
 }
 .grid-item--width2 img{
   width:320px;
@@ -51,10 +52,7 @@ body{
 .grid-item--height3 img{
   height:260px;
 }
-img{
-  cursor:pointer;
-}
-img:hover{
+.grid-item img:hover{
   opacity:.4;
 }
 #book{
