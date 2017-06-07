@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', function(){
+  /*
+    ~ Need to send emails to brit to start new day
+    ~ Add some style to the booking part
+    ~ Email should be a little better
+    ~ Thank you message after summit
+    ~ Maybe some security or a check that only so many can book a time date
+  */
   $(document).ready(function(){
     $('#BookNow').hide();
     $('.datepicker').datepicker({
