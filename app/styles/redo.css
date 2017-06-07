@@ -126,5 +126,10 @@ body{
   width:50%;
 }
 #footer{
+  background-color:#333;
+  color:white;
+  margin-left:-20px;
+  height:150px;
+  line-height:150px;
   text-align:center;
 }
