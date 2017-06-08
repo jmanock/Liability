@@ -75,6 +75,9 @@ body{
 .image:hover:after, .image:hover:before{
   opacity:1;
 }
+img:hover{
+  opacity:.5;
+}
 #book{
 
 }
