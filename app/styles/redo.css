@@ -16,6 +16,10 @@ body{
   font-size:2em;
   font-family:limelight;
 }
+.navbar-text{
+  font-size:1em;
+  margin-right:2%;
+}
 #about{
   margin-top:60px;
   margin-right:50px;

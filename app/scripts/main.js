@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
     ~ Email should be a little better
     ~ Thank you message after summit
     ~ Maybe some security or a check that only so many can book a time date
+    ~ Open on the right
   */
   $(document).ready(function(){
     $('#BookNow').hide();
