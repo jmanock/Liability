@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function(){
       e.preventDefault();
       var date = $(this).val();
       $('form').show();
-      $('.date').text(date);
+      $('.date').text('Date: '+date);
       $('#Date').val(date);
       $('#Date').hide();
     });// End `Change`
