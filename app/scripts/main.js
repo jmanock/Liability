@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
       $('form').show();
       $('.date').text(date);
       $('#Date').val(date);
+      $('#Date').hide();
     });// End `Change`
 
     $('.grid').masonry({

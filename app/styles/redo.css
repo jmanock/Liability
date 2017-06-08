@@ -123,6 +123,11 @@ body{
 .datepicker .ui-datepicker-calendar .ui-date-highlight:hover{
   color:#fff;
 }
+form{
+  float:right;
+  margin-top:-200px;
+  margin-right:200px;
+}
 #location{
 
 }
@@ -137,8 +142,8 @@ body{
   background-color:#333;
   color:white;
   margin-left:-20px;
-  height:150px;
-  line-height:150px;
+  height:100px;
+  line-height:100px;
   text-align:center;
 }
 #footer a{
