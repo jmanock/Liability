@@ -97,26 +97,45 @@
           <div class="datepicker-header"></div>
         </div>
 
-        <form action="https://script.google.com/macros/s/AKfycbzoOi3KQENhFs9dsnMfWtLqS0Ytt-9iehe_PH79Lu5xyhZ3Ew/exec" method='POST' id='BookNow'>
-          <input type="text" placeholder='Name' class='name' name='Name'><br>
-          <input type="email" placeholder='Email' class='email' name='email'><br>
+        <form action="https://script.google.com/macros/s/AKfycbzoOi3KQENhFs9dsnMfWtLqS0Ytt-9iehe_PH79Lu5xyhZ3Ew/exec" method='POST' id='BookNow' class='dark-matter'>
+          <label>
+            <span>Your Name:</span>
+            <input type="text" placeholder='Name' class='name' name='Name'>
+          </label>
+          <label>
+            <span>Your Email:</span>
+            <input type="email" placeholder='Email' class='email' name='email'>
+          </label>
+
           <!-- <span id='email-invalid' style='visibility:hidden'>Must be a valid email address</span> -->
-          <input type="number" placeholder='Phone Number' class='phone' required name='PhoneNumber'><br>
+          <label>
+            <span>Your Phone Number:</span>
+            <input type="number" placeholder='Phone Number' class='phone' required name='PhoneNumber'>
+          </label>
+
           <input type="text" name='Date' class='date' id='Date'>
-          <select name="Time" required>
-            <option value="" disabled selected>Select Time</option>
-            <option value="10:00am">10:00am</option>
-            <option value="11:00am">11:00am</option>
-            <option value="12:00pm">12:00pm</option>
-            <option value="1:00pm">1:00pm</option>
-            <option value="2:00pm">2:00pm</option>
-            <option value="3:00pm">3:00pm</option>
-            <option value="4:00pm">4:00pm</option>
-            <option value="5:00pm">5:00pm</option>
-            <option value="6:00pm">6:00pm</option>
-            <option value="7:00pm">7:00pm</option>
-          </select><br>
-          <span class='date' id='showDate'></span><br>
+          <label>
+            <span>Time:</span>
+            <select name="Time" required>
+              <option value="" disabled selected>Select Time</option>
+              <option value="10:00am">10:00am</option>
+              <option value="11:00am">11:00am</option>
+              <option value="12:00pm">12:00pm</option>
+              <option value="1:00pm">1:00pm</option>
+              <option value="2:00pm">2:00pm</option>
+              <option value="3:00pm">3:00pm</option>
+              <option value="4:00pm">4:00pm</option>
+              <option value="5:00pm">5:00pm</option>
+              <option value="6:00pm">6:00pm</option>
+              <option value="7:00pm">7:00pm</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Date:</span>
+            <span class='date' id='showDate'></span>
+          </label>
+
           <button type='submit' class='button-success'>
             <i class='fa fa-paper-plane'></i>&nbsp; Send
           </button>
