@@ -1,12 +1,18 @@
 document.addEventListener('DOMContentLoaded', function(){
   /*
+    ~ Need to have checks for missing email
+      - Need at least a phone number or email address
     ~ Work on design at the top?
+    ~ Underline sections off nav bar
+    ~ Add content
+      - Maybe history on the salon
     ~ Clean up location
     ~ Work on footer
     ~ Social Media links
     ~ Better style
   */
   $(document).ready(function(){
+    
     $('#BookNow').hide();
     $('.datepicker').datepicker({
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',

@@ -20,10 +20,16 @@ body{
   font-size:1em;
   margin-right:2%;
 }
+a.active{
+  border-bottom:2px solid #ecfof1;
+}
 #about{
   margin-top:60px;
   margin-right:50px;
   margin-bottom:100px;
+}
+#history{
+  margin-bottom:50px;
 }
 #about .brit{
   float:right;
