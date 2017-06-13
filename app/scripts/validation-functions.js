@@ -49,7 +49,7 @@ function handleFormSubmit(event){
       console.log(xhr.status, xhr.statusText);
       console.log(xhr.responseText);
       document.getElementById('BookNow').style.display = 'none';
-      // document.getElementById('thankyou_message').style.display = 'block';
+      document.getElementById('thankyou_message').style.display = 'block';
       return;
     };
     var encoded = Object.keys(data).map(function(k){

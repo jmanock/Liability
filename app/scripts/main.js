@@ -2,11 +2,10 @@ document.addEventListener('DOMContentLoaded', function(){
   /*
     ~ Need to send emails to brit to start new day
     ~ Add some style to the booking part
-    ~ Email should be a little better
-    ~ Thank you message after summit    
   */
   $(document).ready(function(){
     $('#BookNow').hide();
+    $('#thankyou_message').hide();
     $('.datepicker').datepicker({
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',
       nextText:'<i class="fa fa-fw fa-angle-right"></i>',
@@ -24,7 +23,10 @@ document.addEventListener('DOMContentLoaded', function(){
       $('#Date').val(date);
       $('#Date').hide();
     });// End `Change`
-
+    $('button').on('click', function(){
+      // Need to make sure the form is correct first before it shows up
+      // $('#thankyou_message').show();
+    });
   });// End `Ready`
 });// End `Event Listener`
 function initMap(){
