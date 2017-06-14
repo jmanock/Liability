@@ -62,9 +62,6 @@ a.active{
   display:inline-block;
   border:2px solid white;
 }
-.image img{
-
-}
 .image:after, .image:before{
   position:absolute;
   opacity:0;
@@ -90,8 +87,12 @@ a.active{
 .image:hover:after, .image:hover:before{
   opacity:1;
 }
-img:hover{
-  opacity:.5;
+.work{
+  opacity:.7;
+}
+.work:hover{
+  opacity:1;
+  cursor:pointer;
 }
 #book{
 

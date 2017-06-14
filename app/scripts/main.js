@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function(){
     ~ Need to have checks for missing email
       - Need at least a phone number or email address
     ~ Work on design at the top?
-    ~ Underline sections off nav bar
     ~ Add content
       - Maybe history on the salon
     ~ Clean up location
