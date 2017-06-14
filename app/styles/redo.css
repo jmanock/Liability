@@ -9,10 +9,13 @@ body{
 }
 .navbar{
   font-size:1.5em;
-  background-color:#333;
+  background-color:#222;
+}
+ul > li >a{
+  color:red !important;
 }
 .navbar-brand{
-  color:red !important;
+  color:white !important;
   font-size:2em;
   font-family:limelight;
 }
@@ -21,7 +24,7 @@ body{
   margin-right:2%;
 }
 a.active{
-  border-bottom:2px solid #ecfof1;
+  border-bottom:2px solid #ecf0f1;
 }
 #about{
   margin-top:60px;
