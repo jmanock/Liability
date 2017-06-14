@@ -12,10 +12,16 @@ body{
   background-color:#222;
 }
 ul > li >a{
-  color:red !important;
+  color:#c00000 !important;
+}
+.tel{
+  color:#f5f5f5;
+}
+.fa-phone-square{
+  color:#c00000;
 }
 .navbar-brand{
-  color:white !important;
+  color:#f5f5f5 !important;
   font-size:2em;
   font-family:limelight;
 }
@@ -24,7 +30,7 @@ ul > li >a{
   margin-right:2%;
 }
 a.active{
-  border-bottom:2px solid #ecf0f1;
+  border-bottom:2px solid #f5f5f5;
 }
 #about{
   margin-top:60px;
