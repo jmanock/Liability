@@ -14,8 +14,17 @@ body{
 ul > li >a{
   color:#c00000 !important;
 }
+.fa-scissors{
+  color:white;
+  border:3px solid white;
+  border-radius:25px;
+}
 .tel{
   color:#f5f5f5;
+}
+.tel:hover{
+  color:#f5f5f5;
+  text-decoration:none;
 }
 .fa-phone-square{
   color:#c00000;
