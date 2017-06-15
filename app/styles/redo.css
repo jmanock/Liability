@@ -66,6 +66,9 @@ h4{
 #about p, li{
   font-size:1.2em;
 }
+#about li, .offer{
+  margin-left:10%;
+}
 #history{
   margin-bottom:50px;
 }
@@ -78,19 +81,6 @@ h4{
 #team img{
   border-radius:10px;
 }
-/*.brit img, .amanda img, .jeanne img, .patti img{
-  float:right;
-}
-.brit p, .amanda p, .jeanne p, .pattie p{
-
-}
-.maggie img, .anita img, .shadow img, .newgirl img{
-  float:left;
-  margin-right:20px;
-}
-.maggie p, .anita p, .shadow p, .newgirl p{
-
-}*/
 #team ul{
   list-style-type:none;
 }
@@ -226,11 +216,10 @@ b{
   font-family:limelight;
   text-decoration:underline;
   color:#c00000;
-  /*color:#222;*/
 }
 form{
   float:right;
-  margin-top:-350px;
+  margin-top:-380px;
   width:50%;
   padding:50px;
   background:#222;
@@ -240,11 +229,13 @@ input, select{
   display:inline-block;
   width:100%;
   margin:20px 0;
-  border:5px dashed #222;
+  border:2px dashed #222;
   outline:none;
   font-size:20px;
   transition:all .2s ease;
+  color:#222;
 }
+
 select{
   color:#222;
   background-color:#fff;
@@ -255,6 +246,8 @@ button{
   margin:20px 0;
   outline:none;
   font-size:20px;
+  color:#c00000;
+  background-color:#222;
 }
 input:focus, select:focus{
   border-color:#c00000;
@@ -265,22 +258,37 @@ input:focus, select:focus{
 #map{
   height:200px;
   width:50%;
+  float:right;
+  margin-top:-175px;
+  margin-right:150px;
 }
-
 .map{
   width:50%;
 }
-
-#footer{
+#connect ul{
+  list-style-type:none;
+}
+/*#footer{
   background-color:#222;
   color:#c00000;
   margin-left:-20px;
   height:100px;
   line-height:100px;
   text-align:center;
+}*/
+#footer{
+  margin-top:100px;
+  text-align:center;
+  color:#c00000;
 }
 #footer span{
   color:#f2f2f2;
   font-family:limelight;
   font-size:1.5em;
+}
+#footer ul{
+  list-style-type:none;
+}
+#footer li{
+  display:inline;
 }
