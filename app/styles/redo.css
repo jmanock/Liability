@@ -6,6 +6,8 @@
 body{
   height:100%;
   margin-left:20px;
+  background-color:#555;
+  color:#111;
 }
 .navbar{
   font-size:1.5em;
@@ -103,10 +105,10 @@ a.active{
   opacity:1;
 }
 .work{
-  opacity:.7;
+  opacity:1;
 }
 .work:hover{
-  opacity:1;
+  opacity:.3;
   cursor:pointer;
 }
 #book{
@@ -126,7 +128,7 @@ a.active{
   font-size:1.5em;
   padding-bottom:.5em;
   letter-spacing:.1em;
-  color:#111;
+  color:#222;
 }
 .datepicker .ui-datepicker-header .ui-datepicker-prev,
 .datepicker .ui-datepicker-header .ui-datepicker-next{
@@ -135,7 +137,7 @@ a.active{
   font-size:1.4em;
   padding:0 5px;
   margin-top:-7px;
-  color:black;
+  color:#222;
   transition:.6s;
 }
 .datepicker .ui-datepicker-header .ui-datepicker-next{
@@ -147,7 +149,7 @@ a.active{
   align:center;
 }
 .datpicker.ui-datepicker-calendar a{
-  color:black;
+  color:#222;
   text-decoration:none;
   display:block;
   margin:0 auto;
@@ -169,11 +171,6 @@ a.active{
 .datepicker .ui-datepicker-calendar .ui-date-highlight:hover{
   color:#fff;
 }
-/*form{
-  float:right;
-  margin-top:-200px;
-  margin-right:350px;
-}*/
 #book{
   margin-bottom:200px;
   margin-top:100px;
@@ -187,28 +184,29 @@ a.active{
 b{
   font-family:limelight;
   text-decoration:underline;
-  color:red;
+  color:#c00000;
+  /*color:#222;*/
 }
 form{
   float:right;
   margin-top:-350px;
   width:50%;
   padding:50px;
-  background:white;
+  background:#fff;
   text-align:center;
 }
 input, select{
   display:inline-block;
   width:100%;
   margin:20px 0;
-  border:2px dashed lightblue;
+  border:2px dashed #222;
   outline:none;
   font-size:20px;
   transition:all .2s ease;
 }
 select{
-  color:gray;
-  background-color:white;
+  color:#222;
+  background-color:#fff;
 }
 button{
   width:100%;
@@ -218,21 +216,21 @@ button{
   font-size:20px;
 }
 input:focus, select:focus{
-  border-color:blue;
+  border-color:#c00000;
 }
 .date{
   font-size:20px;
-}
-#location{
-
 }
 #map{
   height:200px;
   width:50%;
 }
+
 .map{
   width:50%;
+
 }
+
 #footer{
   background-color:#222;
   color:white;
@@ -240,7 +238,4 @@ input:focus, select:focus{
   height:100px;
   line-height:100px;
   text-align:center;
-}
-#footer a{
-  font-size:2em;
 }
