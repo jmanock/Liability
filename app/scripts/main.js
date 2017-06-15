@@ -2,13 +2,9 @@ document.addEventListener('DOMContentLoaded', function(){
   /*
     ~ Need to have checks for missing email
       - Need at least a phone number or email address
-    ~ Work on design at the top?
     ~ Add content
-      - Maybe history on the salon
     ~ Clean up location
     ~ Work on footer
-    ~ Social Media links
-    ~ Better style
   */
   $(document).ready(function(){
     var sections = $('section');
@@ -40,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function(){
       return false;
     });
 
-    $('#BookNow').hide();
+    $('#Date').hide();
+    $('.date').text('Please Select a Date.');
+
     $('.datepicker').datepicker({
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',
       nextText:'<i class="fa fa-fw fa-angle-right"></i>',
@@ -53,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function(){
     $('.datepicker').on('change',function(e){
       e.preventDefault();
       var date = $(this).val();
-      $('form').show();
       $('.date').text('Date: '+date);
       $('#Date').val(date);
       $('#Date').hide();
