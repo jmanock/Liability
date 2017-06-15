@@ -69,28 +69,48 @@ h4{
 #history{
   margin-bottom:50px;
 }
-#team .brit{
-  float:right;
-  border-radius:10px;
-  margin-left:10px;
-  margin-right:20px;
-}
-.two{
-  margin-bottom:50px;
-}
-#team .maggie{
-  float:left;
-  border-radius:20px;
-  margin-right:10px;
-}
-/*.offer{
-  margin-top:50px;
-}*/
 #team{
   margin-bottom:100px;
 }
 #team p{
-  font-size:1.2em;
+  font-size:1.15em;
+}
+#team img{
+  border-radius:10px;
+}
+/*.brit img, .amanda img, .jeanne img, .patti img{
+  float:right;
+}
+.brit p, .amanda p, .jeanne p, .pattie p{
+
+}
+.maggie img, .anita img, .shadow img, .newgirl img{
+  float:left;
+  margin-right:20px;
+}
+.maggie p, .anita p, .shadow p, .newgirl p{
+
+}*/
+#team ul{
+  list-style-type:none;
+}
+.brit img, .amanda img, .jeanne img, .patti img{
+  float:right;
+  margin-left:10px;
+  margin-right:20px;
+}
+.amanda p, .jeanne p, .patti p{
+  margin-bottom:100px;
+}
+.maggie img, .anita img, .shadow img, .newgirl img{
+  float:left;
+  margin-right:10px;
+}
+.anita p, .shadow p{
+  margin-bottom:100px;
+}
+.two{
+  margin-bottom:50px;
 }
 .image{
   position:relative;
