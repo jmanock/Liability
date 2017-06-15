@@ -2,9 +2,6 @@ document.addEventListener('DOMContentLoaded', function(){
   /*
     ~ Need to have checks for missing email
       - Need at least a phone number or email address
-    ~ Add content
-    ~ Clean up location
-    ~ Work on footer
   */
   $(document).ready(function(){
     var sections = $('section');

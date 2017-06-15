@@ -235,7 +235,6 @@ input, select{
   transition:all .2s ease;
   color:#222;
 }
-
 select{
   color:#222;
   background-color:#fff;
@@ -251,6 +250,20 @@ button{
 }
 input:focus, select:focus{
   border-color:#c00000;
+}
+::-webkit-input-placeholder{
+  color:#222;
+}
+:-ms-input-placeholder{
+  color:#222;
+}
+::-moz-placeholder{
+  color:#222;
+  opacity:1;
+}
+:-moz-placeholder{
+  color:red;
+  opacity:1;
 }
 .date{
   font-size:20px;
@@ -291,4 +304,7 @@ input:focus, select:focus{
 }
 #footer li{
   display:inline;
+}
+#footer i{
+  font-size:2em;
 }
