@@ -42,10 +42,11 @@ document.addEventListener('DOMContentLoaded', function(){
     $('.datepicker').datepicker({
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',
       nextText:'<i class="fa fa-fw fa-angle-right"></i>',
-      beforeShowDay:function(date){
-        var day = date.getDay();
-        return [day !=0 && day!=1, ''];
-      }
+      // beforeShowDay:function(date){
+      //   var day = date.getDay();
+      //   // return [day !=0 && day!=1, ''];
+      //   return day;
+      // }
     });// End `DatePicker`
 
     $('.datepicker').on('change',function(e){
