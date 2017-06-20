@@ -2,6 +2,7 @@
   font-family:limelight;
   src:url(../fonts/Limelight-Regular.tff);
 }
+
 body{
 
 }
@@ -75,6 +76,8 @@ tr{
   color:#c00000;
 }
 form{
+  border:2px solid #222;
+  margin-right:20px;
   float:right;
   margin-top:-400px;
   width:50%;

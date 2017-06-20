@@ -6,7 +6,11 @@ $(document).ready(function(){
     ~ Have to check and see if time is avaible
     ~ Thank you message
     ~ Salon Retro gmail group or invite everyone to mine?
+    ~ A few questions at a time will be able to look up times
+    ~ Fade in faade out form and date picker
+    ~ Back button to change the date
   */
+  $('form').hide();
   $('#date').hide();
   $('#showDate').text('Please Select a Date!');
   $('.send').prop('disabled', true);
@@ -17,6 +21,8 @@ $(document).ready(function(){
 
   $('.datepicker').on('change', function(e){
     e.preventDefault();
+    $('form').show(1000);
+    //$('form').fadeIn(1000);
     var date = $(this).val();
     $('.send').prop('disabled', false);
     $('#showDate').text('Date: '+date);
