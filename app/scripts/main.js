@@ -1,6 +1,6 @@
 $(document).ready(function(){
   /*
-    ~ Styles Name
+    ~ Hide time till stylest is selected
     ~ Time of Appointment every 15 mins
     ~ Up to two Appointments per time
     ~ Have to check and see if time is avaible
