@@ -2,8 +2,7 @@
   "name": "sretro",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.3.5",
-    "modernizr": "~2.8.1"
+    "bootstrap": "~3.3.5"
   },
   "overrides": {
     "bootstrap": {
@@ -16,7 +15,7 @@
     }
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.3.0"
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
   }
 }
