@@ -1,3 +1,7 @@
+@font-face{
+  font-family:limelight;
+  src:url(../fonts/Limelight-Regular.tff);
+}
 body{
 
 }
@@ -5,6 +9,10 @@ h1{
   text-align:center;
   text-decoration:underline;
   margin-bottom:100px;
+}
+b{
+  font-family:limelight;
+  color:#c00000;
 }
 .datepicker{
   margin-left:20px;
