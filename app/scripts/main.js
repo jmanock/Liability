@@ -1,37 +1,30 @@
 $(document).ready(function(){
-  /*
-    ~ List of Stylest
-      - Open Times
-      - Open Dates
-    ~ If date and time match should not be able to book the date
-  */
+  function startUp(){
+    $('form').hide();
+    $('#date').hide();
 
-  // Testing the api in sheets
-  var id = 'AIzaSyCC7WGlw2E6bq1grue0BlwmOD831iinJDo';
-  var sheets = 'https://docs.google.com/spreadsheets/d/19G5guLeArcjOsrmKGLJjYN6T7bW6HUGxVXDav73JM0M/edit?usp=sharing';
-
-  $('form').hide();
-  $('#date').hide();
-  $('#showDate').text('Please Select a Date!');
-  $('.send').prop('disabled', true);
-  $('.datepicker').datepicker({
-    prevText:'<i class="fa fa-fw fa-angle-left"></i>',
-    nextText:'<i class="fa fa-fw fa-angle-right"></i>'
-  });
+    $('.datepicker').datepicker({
+      prevText:'<i class="fa fa-fw fa-angle-left"></i>',
+      nextText:'<i class="fa fa-fw fa-angle-right"></i>'
+    });// End `datepicker`
+  }// End `startUp`
 
   $('.datepicker').on('change', function(e){
     e.preventDefault();
+    $('.datepicker').hide(1000);
     $('form').show(1000);
-    //$('form').fadeIn(1000);
     var date = $(this).val();
-    $('.send').prop('disabled', false);
     $('#showDate').text('Date: '+date);
     $('#date').val(date);
-    $('#date').hide();
-  });
+    // Hide name, email, time,
+    // Show selected date
+  });// End `Datepicker Change`
 
-  $('.send').on('click', function(e){
+  $('.back').on('click', function(e){
     e.preventDefault();
-    console.log('Hold on champ nothing to send yet');
-  })
+    $('form').hide(1000);
+    $('.datepicker').show(1000);
+  });// End `Back Click`
+
+  startUp();
 });
