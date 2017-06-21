@@ -1,15 +1,15 @@
 $(document).ready(function(){
   /*
-    ~ Hide time till stylest is selected
-    ~ Time of Appointment every 15 mins
-    ~ Up to two Appointments per time
-    ~ Have to check and see if time is avaible
-    ~ Thank you message
-    ~ Salon Retro gmail group or invite everyone to mine?
-    ~ A few questions at a time will be able to look up times
-    ~ Fade in faade out form and date picker
-    ~ Back button to change the date
+    ~ List of Stylest
+      - Open Times
+      - Open Dates
+    ~ If date and time match should not be able to book the date
   */
+
+  // Testing the api in sheets
+  var id = 'AIzaSyCC7WGlw2E6bq1grue0BlwmOD831iinJDo';
+  var sheets = 'https://docs.google.com/spreadsheets/d/19G5guLeArcjOsrmKGLJjYN6T7bW6HUGxVXDav73JM0M/edit?usp=sharing';
+
   $('form').hide();
   $('#date').hide();
   $('#showDate').text('Please Select a Date!');
