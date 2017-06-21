@@ -14,12 +14,22 @@ $(document).ready(function(){
     $('.datepicker').hide(1000);
     $('form').show(1000);
     var date = $(this).val();
-    $('#showDate').text('Date: '+date);
+    $('#showDate').text('Booking Date: '+date);
     $('#date').val(date);
-    // Hide name, email, time,
-    // Show selected date
+    $('#name').hide();
+    $('#email').hide();
+    $('#phoneNumber').hide();
+    $('#time').hide();
   });// End `Datepicker Change`
 
+  $('#stylest').on('change', function(){
+    // Needs to show date, name, email, phonenumber
+    // Needs to look up times for styles
+    $('#name').show();
+    $('#email').show();
+    $('#phoneNumber').show();
+    $('#time').show();
+  });// End `Styles Change`
   $('.back').on('click', function(e){
     e.preventDefault();
     $('form').hide(1000);

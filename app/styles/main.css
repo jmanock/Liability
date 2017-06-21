@@ -2,9 +2,6 @@
   font-family:limelight;
   src:url(../fonts/Limelight-Regular.ttf);
 }
-body{
-
-}
 h1{
   text-align:center;
   text-decoration:underline;
@@ -15,7 +12,7 @@ b{
   color:#c00000;
 }
 .datepicker{
-  margin-left:20%;
+  margin-left:30%;
   background-color:#222;
   width:475px;
   border-radius:10px;
@@ -76,7 +73,7 @@ tr{
 }
 form{
   border:2px solid #222;
-  margin-left:20%;
+  margin-left:25%;
   width:50%;
   padding:50px;
   text-align:center;
@@ -86,6 +83,9 @@ form{
   color:#c00000;
   float:left;
   cursor:pointer;
+}
+#showDate{
+  font-size:1.5em;
 }
 input, select{
   display:inline-block;
