@@ -57,13 +57,21 @@ function init(){
 }
 
 function showInfo(data, tabletop){
-  // Need to get the value of stylest, date and time 
   data.forEach(function(x){
-    //console.log(x);
-    var stylestCheck = x.Stylest;
-    var timeCheck = x.Time;
-    var dateCheck = x.Date;
-    console.log(stylestCheck);
+    /*
+      ~ Need to check date vs date
+      ~ Need to check stylest vs stylest
+      ~ Get back times available
+    */
+    var timeBackEnd = x.Time;
+    var dateBackEnd = x.Date;
+    var stylestBackEnd = x.Stylest;
+    var dateValue = document.getElementById('date').value;
+    var stylestValue = document.getElementById('stylest').value;
+
+    if(dateBackEnd.length === 9){
+      
+    }
   });
 }
 
