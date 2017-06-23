@@ -1,7 +1,12 @@
 $(document).ready(function(){
+  var form = $('form');
+  var dates = $('#date');
+  var stylest = $('#stylest');
+  var time = $('#time');
+
   function startUp(){
-    $('form').hide();
-    $('#date').hide();
+    form.hide();
+    dates.hide();
 
     $('.datepicker').datepicker({
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',
@@ -12,24 +17,26 @@ $(document).ready(function(){
   $('.datepicker').on('change', function(e){
     e.preventDefault();
     $('.datepicker').hide(1000);
-    $('form').show(1000);
+    form.show(1000);
     var date = $(this).val();
     $('#showDate').text('Booking Date: '+date);
-    $('#date').val(date);
+    dates.val(date);
     $('#name').hide();
     $('#email').hide();
     $('#phoneNumber').hide();
-    $('#time').hide();
+    time.hide();
   });// End `Datepicker Change`
 
   $('#stylest').on('change', function(){
     // Needs to show date, name, email, phonenumber
     // Needs to look up times for styles
+    init();
     $('#name').show();
     $('#email').show();
     $('#phoneNumber').show();
-    $('#time').show();
+    time.show();
   });// End `Styles Change`
+
   $('.back').on('click', function(e){
     e.preventDefault();
     $('form').hide(1000);
@@ -50,10 +57,14 @@ function init(){
 }
 
 function showInfo(data, tabletop){
-  // Needs to hide times that are taken that day
+  // Need to get the value of stylest, date and time 
   data.forEach(function(x){
     //console.log(x);
+    var stylestCheck = x.Stylest;
+    var timeCheck = x.Time;
+    var dateCheck = x.Date;
+    console.log(stylestCheck);
   });
 }
 
-window.addEventListener('DOMContentLoaded', init);
+//window.addEventListener('DOMContentLoaded', init);
