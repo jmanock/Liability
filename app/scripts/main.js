@@ -59,19 +59,23 @@ function init(){
 function showInfo(data, tabletop){
   data.forEach(function(x){
     /*
-      ~ Need to check date vs date
-      ~ Need to check stylest vs stylest
-      ~ Get back times available
+
     */
     var timeBackEnd = x.Time;
     var dateBackEnd = x.Date;
     var stylestBackEnd = x.Stylest;
     var dateValue = document.getElementById('date').value;
     var stylestValue = document.getElementById('stylest').value;
-
-    if(dateBackEnd.length === 9){
-      
+    var something = dateValue.charAt(0);
+    if(something === '0'){
+      // Remove the 0 to match the dates
+      dateValue = dateValue.substring(1);
     }
+    if(dateValue === dateBackEnd && stylestBackEnd === stylestValue){
+      // This needs to hide the time thats taken or add availabe times
+       console.log('HelloFriend');
+    }
+
   });
 }
 
