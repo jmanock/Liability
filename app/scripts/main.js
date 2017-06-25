@@ -58,9 +58,6 @@ function init(){
 
 function showInfo(data, tabletop){
   data.forEach(function(x){
-    /*
-
-    */
     var timeBackEnd = x.Time;
     var dateBackEnd = x.Date;
     var stylestBackEnd = x.Stylest;
@@ -72,7 +69,7 @@ function showInfo(data, tabletop){
       dateValue = dateValue.substring(1);
     }
     if(dateValue === dateBackEnd && stylestBackEnd === stylestValue){
-      // This needs to hide the time thats taken or add availabe times
+      // This will show just the avaible times 
        console.log('HelloFriend');
     }
 
