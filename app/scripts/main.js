@@ -2,7 +2,8 @@ $(document).ready(function(){
   var form = $('form');
   var dates = $('#date');
   var stylest = $('#stylest');
-  var time = $('#time');
+  var hours = $('#hours');
+  var minutes = $('#minutes');
 
   function startUp(){
     form.hide();
@@ -24,7 +25,8 @@ $(document).ready(function(){
     $('#name').hide();
     $('#email').hide();
     $('#phoneNumber').hide();
-    time.hide();
+    hours.hide();
+    minutes.hide();
   });// End `Datepicker Change`
 
   $('#stylest').on('change', function(){
@@ -34,7 +36,8 @@ $(document).ready(function(){
     $('#name').show();
     $('#email').show();
     $('#phoneNumber').show();
-    time.show();
+    hours.show();
+    minutes.show();
   });// End `Styles Change`
 
   $('.back').on('click', function(e){
@@ -69,7 +72,7 @@ function showInfo(data, tabletop){
       dateValue = dateValue.substring(1);
     }
     if(dateValue === dateBackEnd && stylestBackEnd === stylestValue){
-      // This will show just the avaible times 
+      // This will show just the avaible times
        console.log('HelloFriend');
     }
 
