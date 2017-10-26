@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
   $(document).ready(function(){
-    $('.mobile').hide();
+    
     var sections = $('section');
     var nav = $('nav');
     var nav_height = nav.outerHeight();
