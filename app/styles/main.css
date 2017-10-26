@@ -1,29 +1,78 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+@import url ('https://fonts.googleapis.com/css?family=Quicksand');
+@font-face{
+  src:url('../fonts/Limelight-Regular.ttf');
+  font-family:limelight;
 }
-
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+body{
+  height:100% !important;
+  margin-left:20px !important;
+  background-color:#222 !important;
+  color:#f5f5f5 !important;
+  font-family:Quicksand !important;
+  font-size:2em !important;
 }
-
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
+.navbar{
+  font-size:1.3em;
+  background-color:#222 !important;
+  height:4em;
 }
-
-.hero-unit h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
+ul > li > a{
+  color:#c00000 !important;
+  margin-top:50px;
+}
+.tel{
+  color:#f5f5f5;
+  margin-right:60px;
+}
+.tel:hover{
+  text-decoration:underline;
+  color:#f5f5f5;
+}
+a:hover{
+  text-decoration:none !important;
+  color:#f5f5f5 !important;
+}
+.fa-phone-square{
+  color:#c00000;
+}
+.nav{
+  margin-top:15px;
+}
+.navbar-brand{
+  color:#f5f5f5 !important;
+  font-size:1.5em !important;
+  font-family:limelight;
+  margin-right:50px !important;
+}
+.bg{
+  border:3px solid #c00000;
+  border-radius:50%;
+  background-color:#c00000;
+}
+.navbar-text{
+  font-size:1em;
+  margin-right:2%;
+  margin-top:25px;
+}
+a.active{
+  border-bottom:2px solid #f5f5f5;
+}
+h2{
+  font-size:2em !important;
+  color:#c00000 !important;
+}
+h4{
+  font-size:1.5em !important;
+  font-family:limelight;
+}
+#about{
+  margin-top:130px;
+  margin-right:50px;
+  margin-bottom:100px;
+}
+#about li, .offer{
+  margin-left:10%;
+}
+#team{
+  
 }
