@@ -108,3 +108,22 @@ h4{
 .patti > img{
   float:left;
 }
+#ourWork{
+
+}
+.image > img{
+  height:25%;
+  width:25%;
+}
+#footer{
+  text-align:center;
+}
+#footer ul{
+  list-style-type:none;
+}
+#footer li{
+  display:inline;
+}
+#footer i{
+  font-size:2em;
+}
