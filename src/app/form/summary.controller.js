@@ -7,6 +7,7 @@
   function SummaryController($stateParams, $window, $log){
     var vm = this;
     var dog = $stateParams.dogs;
+    $log.log(dog);
     vm.title = 'Summary';
     vm.states = states;
     vm.dogList = [];
