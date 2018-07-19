@@ -1,0 +1,37 @@
+<acme-navbar></acme-navbar>
+<div class='container'>
+  <h1>{{summary.title}}</h1>
+  <div class='progress'>
+    <div class='progress-bar progress-bar-striped' ng-style="{'width':summary.currentPercentage + '%'}" role='progressbar'>
+      <span>{{summary.currentPercentage}}% Complete</span>
+    </div>
+  </div>
+
+  <section ng-hide='summary.summary'>
+    <button class='btn btn-success' ui-sref='form'><span class='fa fa-plus-circle'></span> Add Dog</button>
+    <table class='table'>
+      <thead>
+        <tr>
+          <th>Edit</th>
+          <th>Dog's Name</th>
+          <th>Breed</th>
+          <th>Eligible</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat='d in summary.dogList'>
+          <td>
+            <button class='btn btn-default' ui-sref='edit({dog:d})'><span class='fa fa-pencil'></span> Edit</button>
+          </td>
+          <td>{{d.name | uppercase}}</td>
+          <td>{{d.state}}</td>
+          <td>Please Calculate to determine eligibility</td>
+          <td>
+            <button class='btn btn-danger'><span class='fa fa-trash'></span> Remove</button>
+          </td>
+        </tbody>
+      </table>
+    </section>
+</div>
+<acme-footer></acme-footer>

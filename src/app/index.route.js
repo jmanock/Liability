@@ -26,6 +26,13 @@
         controller:'SummaryController',
         controllerAs:'summary',
         params:{'dogs':null}
+      })
+      .state('edit', {
+        url:'/edit',
+        templateUrl:'app/form/edit.html',
+        controller:'EditController',
+        controllerAs:'edit',
+        params:{'dog':null}
       });
 
     $urlRouterProvider.otherwise('/');
