@@ -9,7 +9,7 @@
     var dog = $stateParams.dogs;
     $log.log(dog);
     vm.title = 'Summary';
-    vm.states = states;
+    
     vm.dogList = [];
     vm.dogList.push({
       name:dog.name,

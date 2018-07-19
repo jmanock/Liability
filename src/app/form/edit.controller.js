@@ -4,7 +4,7 @@
   .module('liability')
   .controller('EditController', EditController);
 
-  function EditController($stateParams, $log, $scope){
+  function EditController($stateParams){
     var vm = this;
     var dog = $stateParams.dog;
     vm.dogs = dog;
