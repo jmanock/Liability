@@ -3,7 +3,7 @@
 
   angular
   .module('liability')
-  .controller('FormController', FomrController);
+  .controller('FormController', FormController);
 
   function FormController($window){
     var vm = this;
