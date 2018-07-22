@@ -13,26 +13,6 @@
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
-      })
-      .state('form', {
-        url:'/form',
-        templateUrl:'app/form/form.html',
-        controller:'FormController',
-        controllerAs:'form'
-      })
-      .state('summary', {
-        url:'/summary',
-        templateUrl:'app/form/summary.html',
-        controller:'SummaryController',
-        controllerAs:'summary',
-        params:{'dogs':null}
-      })
-      .state('edit', {
-        url:'/edit',
-        templateUrl:'app/form/edit.html',
-        controller:'EditController',
-        controllerAs:'edit',
-        params:{'dog':null}
       });
 
     $urlRouterProvider.otherwise('/');

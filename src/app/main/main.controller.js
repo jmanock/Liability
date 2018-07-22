@@ -11,7 +11,7 @@
 
     vm.awesomeThings = [];
     vm.classAnimation = '';
-    vm.creationDate = 1532024831356;
+    vm.creationDate = 1532231315326;
     vm.showToastr = showToastr;
 
     activate();
