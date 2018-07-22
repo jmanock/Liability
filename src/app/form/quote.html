@@ -358,10 +358,53 @@
         </div>
 
       </div>
-      <button>Next</button>
+      <button class='btn btn-default' ng-click='quote.P2()'>Next</button>
     </section>
 
-    
+    <section ng-show='quote.Part3'>
+      <button class='btn btn-success' ng-click='quote.AddDog()'><span class='fa fa-plus-circle'></span> Add Dog</button>
+      <table class='table'>
+        <thead>
+          <tr>
+            <th>Edit</th>
+            <th>Dog's Name</th>
+            <th>Breed</th>
+            <th>Eligible</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat='d in quote.dogList'>
+            <td>
+              <button ng-click='quote.Edit(d)' class='btn btn-success'><span class='fa fa-pencil'></span> Edit</button>
+            </td>
+            <td>{{d.name | uppercase}}</td>
+            <td>{{d.breed}}</td>
+            <td>Please calculate to determin eligibility</td>
+            <td>
+              <button ng-click='quote.Remove($index)' class='btn btn-danger'><span class='fa fa-trash'></span> Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Additional Insureds ($50 each)</h3>
+      <small>Examples include: landlord, employer, and governmental entity</small>
+
+      <div class='form-group'>
+        <label class='form-control-label'>Select the total number of additional insureds: <span title="If you rent, the owners and/or property manager may request to be added as an additional insured. If your dog injures a person or animal then the defense costs are covered. More towns and cities are requiring insurance to provide medical care of their citizen's." class='fa fa-question' ng-click='quote.Question("If your rent, the owners and/or property manager may request to be added as an additional insured. If your dog injures a person or animal then the defense costs are covered. More towns and cities are requiring insurance to provide medical care of thie citizens.")'></span></label>
+        <select class='form-control' ng-model='quote.insurance.addInsur'>
+          <option value='' selected disabled>Please Choose...</option>
+          <option value='0'>0</option>
+          <option value='1'>1</option>
+          <option value='2'>2</option>
+          <option value='3'>3</option>
+          <option value='4'>4</option>
+          <option value='5'>5</option>
+        </select>
+      </div>
+    </section>
+
   </form>
 </div>
 <acme-footer></acme-footer>
