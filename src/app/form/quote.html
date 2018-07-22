@@ -1,0 +1,367 @@
+<acme-navbar></acme-navbar>
+<div class='container'>
+
+  <h1>{{quote.title}}</h1>
+
+  <form class='form-horizontal'>
+
+    <div class='progress'>
+      <div class='progress-bar progress-bar-striped' ng-style="{'width':quote.currentPercentage + '%'}" role='progressbar'>
+        <span>{{quote.currentPercentage}}% Complete</span>
+      </div>
+    </div>
+
+    <section class='col-md-12' ng-hide='quote.dogInfo'>
+
+      <div class='form-group'>
+        <label class='form-control-label'>Dog's Name:</label>
+        <input type='text' ng-model='quote.dog.name' class='form-control' autofocus autocomplete='off'>
+      </div>
+
+      <div class='form-group'>
+        <label class='form-control-label'>Email:</label>
+        <input type='email' ng-model='quote.dog.email' class='form-control'>
+      </div>
+
+      <div class='form-group'>
+        <label class='form-control-label'>State:</label>
+        <select class='form-control' ng-model='quote.dog.state' ng-options='items for items in quote.states'>
+          <option value='' selected disabled>Please Choose...</option>
+        </select>
+      </div>
+
+      <button class='btn btn-default' ng-click='quote.Next()'><span class='fa fa-paw'></span> Next</button>
+
+    </section>
+
+    <section ng-show='quote.dogApp'>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>What color is {{quote.dog.name | uppercase}}:</label>
+          <input type='text' class='form-control' ng-model='quote.dog.color'>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>What is {{quote.dog.name | uppercase}} weight:</label>
+          <div class='input-group'>
+            <input type='number' class='form-control' ng-model='quote.dog.weight' aria-label='Dogs Weight' aria-describeby='basic'>
+            <div class='input-group-append'>
+              <span class='input-group-text' id='basic'>LBs</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>How old is {{quote.dog.name | uppercase}}: <span title='If your dog is less than 1 enter 1.' class='fa fa-question' ng-click='quote.Question("If your dog is less than 1 enter 1.")'></span></label>
+          <input type='number' class='form-control' ng-model='quote.dog.age' min='1'>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>What breed is your dog:</label>
+          <select class='form-control' ng-model='quote.dog.breed' ng-options='item for item in quote.breeds'>
+            <option value='' selected disabled>Please Choose...</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Do you take {{quote.dog.name | uppercase}} to off leash dog parks:</label>
+          <select class='form-control' ng-model='quote.dog.parks'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Yes'>Yes</option>
+            <option value='No'>No</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>What gender is {{quote.dog.name | uppercase}}:</label>
+          <select class='form-control' ng-model='quote.dog.gender'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Male'>Male</option>
+            <option value='Female'>Female</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Has {{quote.dog.name | uppercase}} ever been involved with animal services: <span title="Such as animal control, dog catcher, law enforcement, dog warden, officer, city, town, or any other government official" class='fa fa-question' ng-click='quote.Question("Such as animal control, dog catcher, law enforcment, dog warden, officer, city, town, or any other government official")'></span></label>
+          <select class='form-control' ng-model='quote.dog.animalService'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Never'>Never</option>
+            <option value='Once'>Once for breaking the law - no injuries</option>
+            <option value='Confiscated'>Confiscated and/or fines were issued</option>
+            <option value='Labeld'>Been labeled dangerous or vicious</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Where does {{quote.dog.name | uppercase}} go for relef/potty most of the time:</label>
+          <select class='form-control' ng-model='quote.dog.bathroom'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Fenced'>Inside a completely fenced yard or kennel</option>
+            <option value='Electric'>Underground electric dog containment system</option>
+            <option value='Loose'>Outside loose in unfenced yard</option>
+            <option value='Teathered'>Permanently tied/teathered outside</option>
+            <option value='Tie Line'>On tie line for 1 hour or less at a time</option>
+            <option value='Leash'>Leash walked</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>What type of training or work does {{quote.dog.name | uppercase}} have: <span title="Therapy dog, are dogs that do volunteer visits at hospitals, classrooms or other facilities, the handler is not paid and does not work at the facility." class='fa fa-question' ng-click='quote.Question("Therapy dog, are dogs that do volunteer visits at hospitals, classrooms or other facilities, the handler is not paid and does not work at the facility.")'></span></label>
+          <select class='form-control' ng-model='quote.dog.training'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='None'>None or basic</option>
+            <option value='Intermediate'>Intermediate</option>
+            <option value='Advanced'>Advanced</option>
+            <option value='Therapy'>Therapy dog</option>
+            <option value='Hunting'>Hunting, gun, sporting off leash, farm, hearding</option>
+            <option value='Sled'>Sled dog racing, musing for hire, freighting</option>
+            <option value='War'>War or police service dog, professionally trained, personal protection or professionally trained guard dog</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Do you take {{quote.dog.name | uppercase}} to a veterinarian:</label>
+          <select class='form-control' ng-model='quote.dog.veterinarian'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Never'>Never</option>
+            <option value='Annually'>Annually and would treat for illness</option>
+            <option value='Required'>Only as required by law</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>What area do you live in:</label>
+          <select class='form-control' ng-model='quote.dog.area'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Country'>Country and/or your dog travels with you</option>
+            <option value='City'>City, town, suburb, campus</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Do you breed {{quote.dog.name | uppercase}}:</label>
+          <select class='form-control' ng-model='quote.dog.doesBreed'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='No'>No</option>
+            <option value='Stud'>Stud only</option>
+            <option value='1'>1 litter annually</option>
+            <option value='2'>2 litters annually</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Are there children, under the age of 16 living with you the majority of the time:</label>
+          <select class='form-control' ng-model='quote.dog.children'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='No'>No</option>
+            <option value='Yes'>Yes</option>
+            <option value='Daycare'>Daycare or babysitting service in the home</option>
+            <option value='Foster'>Foster children in the home</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Have any residents of your household been convicted of animal or domestic abuse in the last 5 years:</label>
+          <select class='form-control' ng-model='quote.dog.abuse'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='No'>No</option>
+            <option value='Yes'>Yes</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Is {{quote.dog.name | uppercase}} involved or integral in your work as a therapist, teacher, counselor, or other similar:</label>
+          <select class='form-control' ng-model='quote.dog.involvedWork'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='No'>No</option>
+            <option value='Yes'>Yes</option>
+          </select>
+          <div class='form-group' ng-if='quote.dog.involvedWork === "Yes" ? true : false'>
+            <label class='form-control-label'>What is your occupation:</label>
+            <input type='text' class='form-control' ng-model='quote.dog.occupation'>
+          </div>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Do you take {{quote.dog.name | uppercase}} to work regularly:</label>
+          <select class='form-control' ng-model='quote.dog.work'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='No'>No</option>
+            <option value='Yes'>Yes</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Total number of dogs in your home:</label>
+          <select class='form-control' ng-model='quote.dog.dogsHome'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='1'>1</option>
+            <option value='2 to 4'>2 to 4</option>
+            <option value='5'>5 or more</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Where does {{quote.dog.name | uppercase}} sleep:</label>
+          <select class='form-control' ng-model='quote.dog.sleep'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Inside'>Inside home</option>
+            <option value='Garage'>Garage</option>
+            <option value='Fenced'>Outside loose in fenced yard</option>
+            <option value='No Restraints'>Outside without any restraints</option>
+            <option value='Outside Kennel'>Permanent outside kennel</option>
+            <option value='Tied'>Tied out</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Is {{quote.dog.name | uppercase}} current on licenses, vaccinations and other such requirments in your area: <span title="These are the laws where you live that require certain vaccinations, tags, or registration. If compliance depends on this insurance select yes." class='fa fa-question' ng-click='quote.Question("These are the laws where you live that require certain vaccinations, tags, or registration. If compliance depends on this insurance select yes.")'></span></label>
+          <select class='form-control' ng-model='quote.dog.vaccimations'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='No'>No</option>
+            <option value='Yes'>Yes</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Is {{quote.dog.name | uppercase}} in a foster arragement where the owner has been deployed: <span title="When you foster, you agree to take a homeless dog into your home and give him or her love, care, and attention, either for a predetermined period of time or until the dog is adopted." class='fa fa-question' ng-click='quote.Question("When you foster, you agree to take a homeless dog into your home and give him or her love, care, and attention, either for a predetermined period of time or until the dog is adopted.")'></span></label>
+          <select class='form-control' ng-model='quote.dog.foster'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='No'>No</option>
+            <option value='Yes'>Yes</option>
+          </select>
+          <div class='form-group' ng-if='quote.dog.foster === "Yes" ? true : false'>
+            <label class='form-control-label'>Describe the arrangement:</label>
+            <input type='text' class='form-control' ng-model='quote.dog.arrangement'>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>What is {{quote.dog.name | uppercase}} reproductive status:</label>
+          <select class='form-control' ng-model='quote.dog.reproductive'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Intact'>Intact</option>
+            <option value='Neutered'>Neutered - male</option>
+            <option value='Spayed'>Spayed - female</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Gender:</label>
+          <select class='form-control' ng-model='quote.dog.gender'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Male'>Male</option>
+            <option value='Female'>Female</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Has {{quote.dog.name | uppercase}} ever injured a human:</label>
+          <select class='form-control' ng-model='quote.dog.humanInjury'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Never'>Never</option>
+            <option value='Injured Child'>Injured a child - leaving minor brusing, scratching but no broken skin - one time</option>
+            <option value='Injured Adult'>Injured an adult - leaving minor brusing, scratching but no broken skin - one time</option>
+            <option value='Child Breaking Skin'>Injured a child - breaking skin, no permanent scarring</option>
+            <option value='Adult Breaking Skin'>Injured an adult - breaking skin, no permanent scarring</option>
+            <option value='Child Medical Attention'>Injured a child - requiring medical attention and/or stitches</option>
+            <option value='Adult Medical Attention'>Injured an adult - requiring medical attention and/or stitches</option>
+            <option value='Child More'>Injured a child more than once</option>
+            <option value='Adult More'>Injured an adult more than once</option>
+          </select>
+          <div ng-if='quote.dog.humanInjury === "Child Medical Attention" || quote.dog.humanInjury === "Adult Medical Attention" ? true : false'>
+            <div class='form-group'>
+              <label class='form-control-label'>Please describe each event in detail:</label>
+              <textarea class='form-control' ng-model='quote.dog.detailHumanInjury' rows='10' cols='30'></textarea>
+            </div>
+            <div class='form-group'>
+              <label class='form-control-label'>What fines, restrictions, specific requirements were mandated as a result of each event:</label>
+              <textarea class='form-control' ng-model='quote.dog.finesHumanInjury' rows='10' cols='30'></textarea>
+            </div>
+            <div class='form-group'>
+              <label class='form-control-label'>What changes have you made to prevent similar events:</label>
+              <textarea class='form-control' ng-model='quote.dog.changesHumanInjury' rows='10' cols='30'></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class='form-group col-md-6'>
+          <label class='form-control-label'>Has {{quote.dog.name | uppercase}} ever injured another animal:</label>
+          <select class='form-control' ng-model='quote.dog.animalInjury'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Never'>Never</option>
+            <option value='Injured Animal'>Injured another animal</option>
+            <option value='Killed Animal'>Killed another animal</option>
+            <option value='Injured More'>Injured more than one animal</option>
+            <option value='Killed More'>Killed more than one animal</option>
+          </select>
+          <div ng-if='quote.dog.animalInjury === "Injured More" || quote.dog.animalInjury === "Killed More" ? true : false'>
+            <div class='form-group'>
+              <label class='form-control-label'>Please describe each event in detail:</label>
+              <textarea class='form-control' ng-model='quote.dog.describeAnimalInjury' rows='10' cols='30'></textarea>
+            </div>
+            <div class='form-group'>
+              <label class='form-control-label'>What fines, restrictions, specific requirements were mandated as a result of each event:</label>
+              <textarea class='form-control' ng-model='quote.dog.finesAnimalInjury' rows='10' cols='30'></textarea>
+            </div>
+            <div class='form-group'>
+              <label class='form-control-label'>What changes have you made to prevent similar events:</label>
+              <textarea class='form-control' ng-model='quote.dog.changesAnimalInjury' rows='10' cols='30'></textarea>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button>Next</button>
+    </section>
+
+    
+  </form>
+</div>
+<acme-footer></acme-footer>
