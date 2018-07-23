@@ -365,7 +365,7 @@
       <h1>{{quote.title}}</h1>
 
       <button class='btn btn-success' ng-click='quote.Add()'><span class='fa fa-plus-circle'></span> Add Dog</button>
-      
+
       <table class='table'>
         <thead>
           <tr>
@@ -377,7 +377,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat='d in quote.dogList track by $index'>
+          <tr ng-repeat='d in quote.dogList'>
             <td>
               <button ng-click='quote.Edit(d)' class='btn btn-success'><span class='fa fa-pencil'></span> Edit</button>
             </td>
@@ -406,6 +406,32 @@
           <option value='5'>5</option>
         </select>
       </div>
+    </section>
+
+    <section ng-show='quote.EditDog'>
+      <h1>{{quote.title}}</h1>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>Dog's name:</label>
+          <input type='text' class='form-control' ng-model='quote.dogs.name'>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>Email:</label>
+          <input type='email' class='form-control' ng-model='quote.dogs.email'>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>State:</label>
+          <select class='form-control' ng-model='quote.dogs.state' ng-options='items for items in quote.states'>
+            <option value='' selected disabled>Please Choose...</option>
+          </select>
+        </div>
+
+      </div>
+      <button class='btn btn-default' ng-click='quote.Save()'>Save</button>
     </section>
 
   </form>

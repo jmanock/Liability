@@ -7,6 +7,7 @@
   function QuoteController($log, $window){
     var vm = this;
 
+    vm.title = 'New Quote';
     vm.states = states;
     vm.breeds = breeds;
     vm.dogList = [];
@@ -16,17 +17,24 @@
     };
 
     vm.P1 = function(){
+      vm.title = 'Dog Info';
       vm.dogInfo = true;
       vm.dogApp = true;
     };
 
-    vm.P2 = function(x){
+    vm.P2 = function(dog){
+      vm.title = 'Summary';
       vm.dogApp = false;
       vm.Part3 = true;
-      vm.dogList.push(x);
+      vm.dogList.push({
+        name:dog.name,
+        email:dog.email,
+        state:dog.state
+      });
     };
 
     vm.Add = function(){
+      vm.title = 'New Dog';
       vm.dogInfo = false;
       vm.dogApp = false;
       vm.Part3 = false;
@@ -38,11 +46,16 @@
     };
 
     vm.Edit = function(d){
+      vm.title = 'Edit Dog';
       vm.Part3 = false;
-      vm.dogInfo = false;
-      vm.dogApp = false;
-      vm.dog = d;
-      $log.log(d);
+      vm.EditDog = true;
+      vm.dogs = d;
+    };
+
+    vm.Save = function(dog){
+      vm.doggie = dog;
+      vm.Part3 = true;
+      vm.EditDog = false;
     };
   }
 })();
