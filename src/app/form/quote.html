@@ -1,8 +1,6 @@
 <acme-navbar></acme-navbar>
 <div class='container'>
 
-  <h1>{{quote.title}}</h1>
-
   <form class='form-horizontal'>
 
     <div class='progress'>
@@ -12,6 +10,7 @@
     </div>
 
     <section class='col-md-12' ng-hide='quote.dogInfo'>
+      <h1>{{quote.title}}</h1>
 
       <div class='form-group'>
         <label class='form-control-label'>Dog's Name:</label>
@@ -35,6 +34,7 @@
     </section>
 
     <section ng-show='quote.dogApp'>
+      <h1>{{quote.title}}</h1>
 
       <div class='form-row'>
 
@@ -362,7 +362,10 @@
     </section>
 
     <section ng-show='quote.Part3'>
-      <button class='btn btn-success' ng-click='quote.AddDog()'><span class='fa fa-plus-circle'></span> Add Dog</button>
+      <h1>{{quote.title}}</h1>
+
+      <button class='btn btn-success' ng-click='quote.Add()'><span class='fa fa-plus-circle'></span> Add Dog</button>
+      
       <table class='table'>
         <thead>
           <tr>
@@ -374,7 +377,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat='d in quote.dogList'>
+          <tr ng-repeat='d in quote.dogList track by $index'>
             <td>
               <button ng-click='quote.Edit(d)' class='btn btn-success'><span class='fa fa-pencil'></span> Edit</button>
             </td>

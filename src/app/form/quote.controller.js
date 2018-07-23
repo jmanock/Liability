@@ -27,15 +27,22 @@
     };
 
     vm.Add = function(){
-
+      vm.dogInfo = false;
+      vm.dogApp = false;
+      vm.Part3 = false;
+      vm.dog = '';
     };
 
     vm.Remove = function(index){
       vm.dogList.splice(index, 1);
     };
 
-    vm.Edit = function(){
-
+    vm.Edit = function(d){
+      vm.Part3 = false;
+      vm.dogInfo = false;
+      vm.dogApp = false;
+      vm.dog = d;
+      $log.log(d);
     };
   }
 })();
