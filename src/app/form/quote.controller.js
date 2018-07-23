@@ -30,8 +30,8 @@
 
     };
 
-    vm.Remove = function(){
-
+    vm.Remove = function(index){
+      vm.dogList.splice(index, 1);
     };
 
     vm.Edit = function(){
