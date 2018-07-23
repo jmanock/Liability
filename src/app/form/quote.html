@@ -24,13 +24,13 @@
       </div>
 
       <div class='form-group'>
-        <label class='form-control-label'>State:</label>
+        <label class='form-control-label'>State:<span title='All dogs must reside in the same state. If you have dogs that reside in different states please complete seperate quotes.' class='fa fa-question' ng-click='quote.Question("All dogs must reside in the same state. If you have dogs that reside in different states please complete seperate quotes.")'></span></label>
         <select class='form-control' ng-model='quote.dog.state' ng-options='items for items in quote.states'>
           <option value='' selected disabled>Please Choose...</option>
         </select>
       </div>
 
-      <button class='btn btn-default' ng-click='quote.Next()'><span class='fa fa-paw'></span> Next</button>
+      <button class='btn btn-default' ng-click='quote.P1()'><span class='fa fa-paw'></span> Next</button>
 
     </section>
 
@@ -358,7 +358,7 @@
         </div>
 
       </div>
-      <button class='btn btn-default' ng-click='quote.P2()'>Next</button>
+      <button class='btn btn-default' ng-click='quote.P2(quote.dog)'><span class='fa fa-paw'></span> Next</button>
     </section>
 
     <section ng-show='quote.Part3'>
