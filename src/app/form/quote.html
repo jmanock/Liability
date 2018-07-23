@@ -415,7 +415,7 @@
 
         <div class='form-group col-md-4'>
           <label class='form-control-label'>Dog's name:</label>
-          <input type='text' class='form-control' ng-model='quote.dogs.name'>
+          <input type='text' class='form-control' ng-model='quote.dogs.name' disabled>
         </div>
 
         <div class='form-group col-md-4'>
@@ -431,6 +431,70 @@
         </div>
 
       </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>What color is {{quote.dogs.name | uppercase}}:</label>
+          <input type='text' class='form-control' ng-model='quote.dogs.color'>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>How old is {{quote.dogs.name | uppercase}}:</label>
+          <input type='number' class='form-control' ng-model='quote.dogs.age'>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>How much does {{quote.dogs.name | uppercase}} weight:</label>
+          <div class='input-group'>
+            <input type='number' ng-model='quote.dogs.weight' class='form-control' aria-label='Dogs Weight' aria-describeby='basic'>
+            <div class='input-group-append'>
+              <span class='input-group-text' id='basic'>LBs</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>What is {{quote.dogs.name | uppercase}} breed:</label>
+          <select class='form-control' ng-model='quote.dogs.breed' ng-options='item for item in quote.breeds'>
+            <option value='' selected disabled>Please Choose...</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>Do you take {{quote.dogs.name | uppercase}} to off leash dog parks:</label>
+          <select class='form-control' ng-model='quote.dogs.parks'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Yes'>Yes</option>
+            <option value='No'>No</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>What gender is {{quote.dogs.name | uppercase}}:</label>
+          <select class='form-control' ng-model='quotes.dogs.gender'>
+            <option value='' selected disabled>Please Choose..</option>
+            <option value='Male'>Male</option>
+            <option value='Female'>Female</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>Has {{quote.dogs.name | uppercase}} ever been involved with animal services:</label>
+          <select class='form-control' ng-model='quote.dogs.animalService'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Never'>Never</option>
+            <option value='Once'>Once for breaking the law - no injuries</option>
+            <option value
+
       <button class='btn btn-default' ng-click='quote.Save()'>Save</button>
     </section>
 
