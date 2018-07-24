@@ -495,6 +495,75 @@
             <option value='Once'>Once for breaking the law - no injuries</option>
             <option value='Confiscated'>Confiscated and/or fines were issued</option>
             <option value='Labeled'>Been labeled dangerous or vicious</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>Where does {{quote.dogs.name | uppercase}} go for relef/potty most of the time:</label>
+          <select class='form-control' ng-model='quote.dogs.bathroom'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Fenced'>Inside a completely fenced yard or kennel</option>
+            <option value='Electric'>Underground electric dog containment system</option>
+            <option value='Loose'>Outside loose in unfenced yard</option>
+            <option value='Teathered'>Permeanently tied/teathered outside</option>
+            <option value='Tie Line'>On tie line for 1 hour or less at a time</option>
+            <option value='Leash'>Leash walked</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>What type of training or work does {{quote.dogs.name | uppercase}} have:</label>
+          <select class='form-control' ng-model='quote.dogs.training'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='None'>None or basic</option>
+            <option value='Intermediate'>Intermediate</option>
+            <option value='Advanced'>Advanced</option>
+            <option value='Therapy'>Therapy dog</option>
+            <option value='Hunting'>Hunting, gun, sporting off leash, farm, hearding</option>
+            <option value='Sled'>Sled dog racing, musing for hire, freighting</option>
+            <option value='War'>War or police service dog, professionally trained, personal protection or professionally trained guard dog</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>Do you take {{quote.dogs.name | uppercase}} to a veterinarian:</label>
+          <select class='form-control' ng-model='quote.dogs.veterinarian'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Never'>Never</option>
+            <option value='Annually'>Annually and would treat for illness</option>
+            <option value='Required'>Only as required by law</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>What area do you live in:</label>
+          <select class='form-control' ng-model='quote.dogs.area'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='Country'>Country and/or your dog travels with you</option>
+            <option value='City'>City, town, suburb, campus</option>
+          </select>
+        </div>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>Do you breed {{quote.dogs.name | uppercase}}:</label>
+          <select class='form-control' ng-model='quote.dogs.doesBreed'>
+            <option value='' selected disabled>Please Choose...</option>
+            <option value='No'>No</option>
+            <option value='Stud'>Stud only</option>
+            <option value='1'>1 litter annually</option>
+            <option value='2'>2 litters annually</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class='form-row'>
+
+        <div class='form-group col-md-4'>
+          <label class='form-control-label'>
 
       <button class='btn btn-default' ng-click='quote.Save()'>Save</button>
     </section>
